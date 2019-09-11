@@ -1205,6 +1205,13 @@
   },
   "cardset": {
     "sidebar": {
+      "category": {
+        "cards": "Karten",
+        "cardset": "Kartei",
+        "repetitorium": "Repetitorium",
+        "bonus": "Bonus-Lernphase",
+        "transcript": "Bonus-Mitschriften"
+      },
       "preview": {
         "cardset": "Zeige die Student/in Ansicht für diese Kartei",
         "repetitorium": "Zeige die Student/in Ansicht für dieses Repetitorium"

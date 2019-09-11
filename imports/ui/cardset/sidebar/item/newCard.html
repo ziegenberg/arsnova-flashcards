@@ -1,0 +1,12 @@
+<template name="cardsetNavigationNewCard">
+    {{#if isCardsetOwner _id}}
+        {{#unless isShuffledCardset _id}}
+            {{#unless gotTranscriptBonus _id}}
+                <a type="button" id="newCardBtn" class="btn btn-sm btn-raised btn-block newCardBtn"
+                   href="{{pathFor 'newCard'}}"
+                    {{disableIfOffline}}><span class="flex-content"><i class="fas fa-plus"></i>&nbsp;{{_ "sidebar-nav.createcard"}}</span>
+                </a>
+            {{/unless}}
+        {{/unless}}
+    {{/if}}
+</template>

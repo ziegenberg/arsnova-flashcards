@@ -1,7 +1,7 @@
 //------------------------ IMPORTS
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
-import "../modal/import.js";
+import "../../navigation/modal/import.js";
 import "./import.html";
 
 /*

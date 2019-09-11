@@ -3,6 +3,7 @@ import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
 import {Bonus} from "../../../../../api/bonus";
 import {Profile} from "../../../../../api/profile";
+import "../../../navigation/modal/leaveBonus.js";
 import "./bonusButton.html";
 
 /*

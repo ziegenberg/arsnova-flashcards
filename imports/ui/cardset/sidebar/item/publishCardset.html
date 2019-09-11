@@ -1,0 +1,13 @@
+<template name="cardsetNavigationPublishCardset">
+    {{#if canPublish}}
+        {{#unless learningActive}}
+            {{#if isCardsetOwner _id}}
+                <button id="publishCardset" class="btn btn-sm btn-raised btn-block publishCardsetBtn"
+                        data-toggle="modal"
+                        data-target="#publishModal" {{disableIfOffline}}>
+                    <span class="flex-content"><i class="fas fa-eye"></i>&nbsp;{{getStatus}}</span>
+                </button>
+            {{/if}}
+        {{/unless}}
+    {{/if}}
+</template>

@@ -1,3 +1,3 @@
 //------------------------ IMPORTS
-import "../modal/deleteAllCards.js";
+import "../../navigation/modal/deleteAllCards.js";
 import "./deleteAllCards.html";

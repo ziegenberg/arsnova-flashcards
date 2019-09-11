@@ -1,7 +1,7 @@
 //------------------------ IMPORTS
 import {Template} from "meteor/templating";
 import {CardType} from "../../../../api/cardTypes";
-import "../modal/publish.js";
+import "../../navigation/modal/publish.js";
 import "./publishCardset.html";
 
 /*

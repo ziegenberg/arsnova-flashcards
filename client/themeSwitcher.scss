@@ -381,6 +381,12 @@ $themes: (
     $background_post_it_lines: map-get($map, "background_post_it_lines");
     $background_pink: map-get($map, "background_pink");
     $background_pink_lines: map-get($map, "background_pink_lines");
+    //cardset sidebar colors
+    $cardset_sidebar_border: map-get($map, "cardset_sidebar_border");
+    $cardset_sidebar_background: map-get($map, "cardset_sidebar_background");
+    $cardset_sidebar_category_header_background: map-get($map, "cardset_sidebar_category_header_background");
+    $cardset_sidebar_category_header_border: map-get($map, "cardset_sidebar_category_header_border");
+    $cardset_sidebar_category_header_text: map-get($map, "cardset_sidebar_category_header_text");
     //card sidebar colors
     $card_sidebar_border: map-get($map, "card_sidebar_border");
     $card_sidebar_background: map-get($map, "card_sidebar_background");
@@ -1394,6 +1400,106 @@ $themes: (
         color: $cardset_footer_navigation_learn_list_progress_text_hover !important;
       }
 
+      .manageBtn {
+        background-color: $cardset_footer_navigation_manage_cardset_background !important;
+        color: $cardset_footer_navigation_manage_cardset_text !important;
+      }
+
+      .manageBtn:hover, .manageBtn:focus {
+        background-color: $cardset_footer_navigation_manage_cardset_background_hover !important;
+        color: $cardset_footer_navigation_manage_cardset_text_hover !important;
+      }
+
+      .manageEditorsList {
+        background-color: $cardset_footer_navigation_manage_list_manage_editors_background !important;
+        color: $cardset_footer_navigation_manage_list_manage_editors_text !important;
+      }
+
+      .manageEditorsList:hover, .manageEditorsList:focus {
+        background-color: $cardset_footer_navigation_manage_list_manage_editors_background_hover !important;
+        color: $cardset_footer_navigation_manage_list_manage_editors_text_hover !important;
+      }
+
+      .resetLeitnerList {
+        background-color: $cardset_footer_navigation_learn_list_reset_leitner_background !important;
+        color: $cardset_footer_navigation_learn_list_reset_leitner_text !important;
+      }
+
+      .resetLeitnerList:hover, .resetLeitnerList:focus {
+        background-color: $cardset_footer_navigation_learn_list_reset_leitner_background_hover !important;
+        color: $cardset_footer_navigation_learn_list_reset_leitner_text_hover !important;
+      }
+
+      .resetWozniakList {
+        background-color: $cardset_footer_navigation_learn_list_reset_wozniak_background !important;
+        color: $cardset_footer_navigation_learn_list_reset_wozniak_text !important;
+      }
+
+      .resetWozniakList:hover, .resetWozniakList:focus {
+        background-color: $cardset_footer_navigation_learn_list_reset_wozniak_background_hover !important;
+        color: $cardset_footer_navigation_learn_list_reset_wozniak_text_hover !important;
+      }
+
+      .reportList {
+        background-color: $cardset_footer_navigation_manage_list_report_background !important;
+        color: $cardset_footer_navigation_manage_list_report_text !important;
+      }
+
+      .reportList:hover, .reportList:focus {
+        background-color: $cardset_footer_navigation_manage_list_report_background_hover !important;
+        color: $cardset_footer_navigation_manage_list_report_text_hover !important;
+      }
+
+      .leaveLearnPhaseList {
+        background-color: $cardset_footer_navigation_manage_list_leave_learn_phase_background !important;
+        color: $cardset_footer_navigation_manage_list_leave_learn_phase_text !important;
+      }
+
+      .leaveLearnPhaseList:hover, .leaveLearnPhaseList:focus {
+        background-color: $cardset_footer_navigation_manage_list_leave_learn_phase_background_hover !important;
+        color: $cardset_footer_navigation_manage_list_leave_learn_phase_text_hover !important;
+      }
+
+      .leaveCardsetList {
+        background-color: $cardset_footer_navigation_manage_list_leave_cardset_background !important;
+        color: $cardset_footer_navigation_manage_list_leave_cardset_text !important;
+      }
+
+      .leaveCardsetList:hover, .leaveCardsetList:focus {
+        background-color: $cardset_footer_navigation_manage_list_leave_cardset_background_hover !important;
+        color: $cardset_footer_navigation_manage_list_leave_cardset_text_hover !important;
+      }
+
+      .leaveEditorsList {
+        background-color: $cardset_footer_navigation_manage_list_leave_editors_background !important;
+        color: $cardset_footer_navigation_manage_list_leave_editors_text !important;
+      }
+
+      .leaveEditorsList:hover, .leaveEditorsList:focus {
+        background-color: $cardset_footer_navigation_manage_list_leave_editors_background_hover !important;
+        color: $cardset_footer_navigation_manage_list_leave_editors_text_hover !important;
+      }
+
+
+      .transcriptsBtn {
+        background-color: $cardset_footer_navigation_transcripts_background !important;
+        color: $cardset_footer_navigation_transcripts_text !important;
+      }
+
+      .transcriptsBtn:hover, .transcriptsBtn:focus {
+        background-color: $cardset_footer_navigation_transcripts_background_hover !important;
+        color: $cardset_footer_navigation_transcripts_text_hover !important;
+      }
+    }
+
+    .cardset-sidebar {
+      border-color: $cardset_sidebar_border !important;
+      background-color: $cardset_sidebar_background !important;
+      .cardset-sidebar-category-header {
+        background-color: $cardset_sidebar_category_header_background !important;
+        border-color: $cardset_sidebar_category_header_border !important;
+        color: $cardset_sidebar_category_header_text !important;
+      }
       .newCardBtn {
         background-color: $cardset_footer_navigation_new_card_background !important;
         color: $cardset_footer_navigation_new_card_text !important;
@@ -1454,45 +1560,26 @@ $themes: (
         color: $cardset_footer_navigation_publish_cardset_text_hover !important;
       }
 
-      .manageBtn {
-        background-color: $cardset_footer_navigation_manage_cardset_background !important;
-        color: $cardset_footer_navigation_manage_cardset_text !important;
+      .exportCardsBtn {
+        background-color: $cardset_footer_navigation_export_cards_background !important;
+        color: $cardset_footer_navigation_export_cards_text !important;
       }
 
-      .manageBtn:hover, .manageBtn:focus {
-        background-color: $cardset_footer_navigation_manage_cardset_background_hover !important;
-        color: $cardset_footer_navigation_manage_cardset_text_hover !important;
+      .exportCardsBtn:hover, .exportCardsBtn:focus {
+        background-color: $cardset_footer_navigation_export_cards_background_hover !important;
+        color: $cardset_footer_navigation_export_cards_text_hover !important;
       }
 
-      .manageEditorsList {
-        background-color: $cardset_footer_navigation_manage_list_manage_editors_background !important;
-        color: $cardset_footer_navigation_manage_list_manage_editors_text !important;
+      .deleteAllCardsBtn {
+        background-color: $cardset_footer_navigation_delete_all_cards_background !important;
+        color: $cardset_footer_navigation_delete_all_cards_text !important;
       }
 
-      .manageEditorsList:hover, .manageEditorsList:focus {
-        background-color: $cardset_footer_navigation_manage_list_manage_editors_background_hover !important;
-        color: $cardset_footer_navigation_manage_list_manage_editors_text_hover !important;
+      .deleteAllCardsBtn:hover, .deleteAllCardsBtn:focus {
+        background-color: $cardset_footer_navigation_delete_all_cards_background_hover !important;
+        color: $cardset_footer_navigation_delete_all_cards_text_hover !important;
       }
 
-      .resetLeitnerList {
-        background-color: $cardset_footer_navigation_learn_list_reset_leitner_background !important;
-        color: $cardset_footer_navigation_learn_list_reset_leitner_text !important;
-      }
-
-      .resetLeitnerList:hover, .resetLeitnerList:focus {
-        background-color: $cardset_footer_navigation_learn_list_reset_leitner_background_hover !important;
-        color: $cardset_footer_navigation_learn_list_reset_leitner_text_hover !important;
-      }
-
-      .resetWozniakList {
-        background-color: $cardset_footer_navigation_learn_list_reset_wozniak_background !important;
-        color: $cardset_footer_navigation_learn_list_reset_wozniak_text !important;
-      }
-
-      .resetWozniakList:hover, .resetWozniakList:focus {
-        background-color: $cardset_footer_navigation_learn_list_reset_wozniak_background_hover !important;
-        color: $cardset_footer_navigation_learn_list_reset_wozniak_text_hover !important;
-      }
 
       .bonusBtn {
         background-color: $cardset_footer_navigation_bonus_background !important;
@@ -1542,76 +1629,6 @@ $themes: (
       .showStatsList:hover, .showStatsList:focus {
         background-color: $cardset_footer_navigation_bonus_list_show_stats_background_hover !important;
         color: $cardset_footer_navigation_bonus_list_show_stats_text_hover !important;
-      }
-
-      .reportList {
-        background-color: $cardset_footer_navigation_manage_list_report_background !important;
-        color: $cardset_footer_navigation_manage_list_report_text !important;
-      }
-
-      .reportList:hover, .reportList:focus {
-        background-color: $cardset_footer_navigation_manage_list_report_background_hover !important;
-        color: $cardset_footer_navigation_manage_list_report_text_hover !important;
-      }
-
-      .leaveLearnPhaseList {
-        background-color: $cardset_footer_navigation_manage_list_leave_learn_phase_background !important;
-        color: $cardset_footer_navigation_manage_list_leave_learn_phase_text !important;
-      }
-
-      .leaveLearnPhaseList:hover, .leaveLearnPhaseList:focus {
-        background-color: $cardset_footer_navigation_manage_list_leave_learn_phase_background_hover !important;
-        color: $cardset_footer_navigation_manage_list_leave_learn_phase_text_hover !important;
-      }
-
-      .leaveCardsetList {
-        background-color: $cardset_footer_navigation_manage_list_leave_cardset_background !important;
-        color: $cardset_footer_navigation_manage_list_leave_cardset_text !important;
-      }
-
-      .leaveCardsetList:hover, .leaveCardsetList:focus {
-        background-color: $cardset_footer_navigation_manage_list_leave_cardset_background_hover !important;
-        color: $cardset_footer_navigation_manage_list_leave_cardset_text_hover !important;
-      }
-
-      .leaveEditorsList {
-        background-color: $cardset_footer_navigation_manage_list_leave_editors_background !important;
-        color: $cardset_footer_navigation_manage_list_leave_editors_text !important;
-      }
-
-      .leaveEditorsList:hover, .leaveEditorsList:focus {
-        background-color: $cardset_footer_navigation_manage_list_leave_editors_background_hover !important;
-        color: $cardset_footer_navigation_manage_list_leave_editors_text_hover !important;
-      }
-
-      .exportCardsBtn {
-        background-color: $cardset_footer_navigation_export_cards_background !important;
-        color: $cardset_footer_navigation_export_cards_text !important;
-      }
-
-      .exportCardsBtn:hover, .exportCardsBtn:focus {
-        background-color: $cardset_footer_navigation_export_cards_background_hover !important;
-        color: $cardset_footer_navigation_export_cards_text_hover !important;
-      }
-
-      .deleteAllCardsBtn {
-        background-color: $cardset_footer_navigation_delete_all_cards_background !important;
-        color: $cardset_footer_navigation_delete_all_cards_text !important;
-      }
-
-      .deleteAllCardsBtn:hover, .deleteAllCardsBtn:focus {
-        background-color: $cardset_footer_navigation_delete_all_cards_background_hover !important;
-        color: $cardset_footer_navigation_delete_all_cards_text_hover !important;
-      }
-
-      .transcriptsBtn {
-        background-color: $cardset_footer_navigation_transcripts_background !important;
-        color: $cardset_footer_navigation_transcripts_text !important;
-      }
-
-      .transcriptsBtn:hover, .transcriptsBtn:focus {
-        background-color: $cardset_footer_navigation_transcripts_background_hover !important;
-        color: $cardset_footer_navigation_transcripts_text_hover !important;
       }
     }
 

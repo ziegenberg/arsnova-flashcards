@@ -888,10 +888,6 @@ Template.registerHelper("getType", function (type) {
 	return type;
 });
 
-Template.registerHelper("isCardsetStudentPreviewActive", function () {
-	return Session.get('isStudentPreviewActive');
-});
-
 Template.registerHelper("getPrice", function (price, returnCurrency = false) {
 	if (price === undefined || price === null) {
 		return;

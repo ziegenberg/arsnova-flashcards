@@ -1,3 +1,3 @@
 //------------------------ IMPORTS
-import "../modal/export.js";
+import "../../navigation/modal/export.js";
 import "./export.html";

@@ -1,9 +1,62 @@
 <template name="cardsetSidebar">
-    {{#if gotBackendAccess}}
-        {{#if this.quantity}}
-            <div id="flashcardSidebarLeft" class="hidden-xs fixed">
-                {{> cardsetSidebarItemPreview}}
+    {{#if isCardsetOwner _id}}
+        <div id="cardsetSidebarLeft" class="cardset-sidebar hidden-xs">
+            {{#unless this.shuffled}}
+                {{#unless gotTranscriptBonus _id}}
+                    <div class="cardset-sidebar-category-header">
+                        {{_ "cardset.sidebar.category.cards"}}
+                    </div>
+                    <div class="cardset-sidebar-category-items">
+                        {{> cardsetNavigationNewCard}}
+                        {{> cardsetNavigationImport}}
+                        {{> cardsetNavigationExport}}
+                        {{> cardsetNavigationDeleteAllCards}}
+                    </div>
+                {{/unless}}
+            {{/unless}}
+            <div class="cardset-sidebar-category-header">
+                {{#if this.shuffled}}
+                    {{_ "cardset.sidebar.category.repetitorium"}}
+                {{else}}
+                    {{_ "cardset.sidebar.category.cardset"}}
+                {{/if}}
             </div>
+            <div class="cardset-sidebar-category-items">
+                {{> cardsetNavigationEditRepetitorium}}
+                {{> cardsetNavigationEditCardset}}
+                {{> cardsetNavigationEditLicense}}
+                {{> cardsetNavigationPublishCardset}}
+            </div>
+        </div>
+    {{/if}}
+    {{#if isCardsetOwnerAndLecturer _id}}
+        {{#if enableIfPublished}}
+            {{#if gotLearningModes}}
+                <div id="cardsetSidebarRight" class="cardset-sidebar hidden-xs">
+                    <div class="cardset-sidebar-category-header">
+                        {{_ "cardset.sidebar.category.bonus"}}
+                    </div>
+                    <div class="cardset-sidebar-category-items">
+                        {{#if learningActive}}
+                            {{> cardsetSidebarBonusManage}}
+                            {{> cardsetSidebarBonusStats}}
+                            {{> cardsetSidebarBonusStop}}
+                        {{else}}
+                            {{> cardsetSidebarBonusStart}}
+                        {{/if}}
+                    </div>
+                </div>
+            {{/if}}
+            {{#if gotTranscriptBonus _id}}
+                <div id="cardsetSidebarRight" class="cardset-sidebar hidden-xs">
+                    <div class="cardset-sidebar-category-header">
+                        {{_ "cardset.sidebar.category.transcript"}}
+                    </div>
+                    <div class="cardset-sidebar-category-items">
+                        {{> cardsetNavigationTranscripts}}
+                    </div>
+                </div>
+            {{/if}}
         {{/if}}
     {{/if}}
 </template>
