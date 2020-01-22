@@ -34,20 +34,20 @@
         <audio id="bell" preload="auto">
             <source src="/audio/Schulgong.mp3" type="audio/mp3"/>
         </audio>
-        {{#unless isActiveRoute regex='presentation|demo'}}
+        {{#if gotCardFeature 'pomodoro.forceModal'}}
             <audio id="failure" preload="auto">
                 <source src="/audio/fail.mp3" type="audio/mp3"/>
             </audio>
             <audio id="success" preload="auto">
                 <source src="/audio/success.mp3" type="audio/mp3"/>
             </audio>
-        {{/unless}}
+        {{/if}}
     </div>
 </template>
 
 <template name="pomodoroTimerModal">
     <!--this is the modal, hidden by default, that pops up when the user clicks the clock. Not too complicated.-->
-    <div id="pomodoroTimerModal" class="modal fade" data-backdrop="{{#if requiresUserInputForFullscreen}}static{{/if}}" role="dialog">
+    <div id="pomodoroTimerModal" class="modal fade" data-backdrop="{{#if gotCardFeature 'pomodoro.forceModal'}}static{{/if}}" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -56,7 +56,7 @@
                     <span class="closePomodoro">
                         {{> mainModalItemCloseIcon}}
                     </span>
-                    <h4 class="modal-title" id="modalTitle">{{_ "pomodoro.form.user.title"}}</h4>
+                    <h4 class="modal-title" id="modalTitle">{{_ "form.user.title"}}</h4>
                 </div>
                 <div class="modal-body">
                     <form id="input" autocomplete="off">
@@ -66,7 +66,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    {{#if isActiveRoute regex='demo|presentation'}}
+                    {{#unless gotCardFeature 'pomodoro.forceModal'}}
                         <button type="button" id="cancelPomodoroBtn" class="btn btn-danger btn-raised">
                             {{_ "pomodoro.form.presentation.button.cancel"}}
                         </button>
@@ -76,14 +76,14 @@
                             <i class="fas fa-cog"></i>
                             {{_ "pomodoro.form.user.button.settings"}}
                         </button>
-                    {{/if}}
+                    {{/unless}}
                     <button type="button" id="startPom" class="btn btn-success btn-raised" data-dismiss="modal">
                         <i class="fas fa-rocket"></i>
-                        {{#if isActiveRoute regex='presentation|demo'}}
+                        {{#unless gotCardFeature 'pomodoro.forceModal'}}
                             {{_ "pomodoro.form.presentation.button.start"}}
                         {{else}}
                             {{_ "pomodoro.form.user.button.start"}}
-                        {{/if}}
+                        {{/unless}}
                     </button>
                 </div>
             </div>
@@ -92,15 +92,15 @@
 </template>
 
 <template name="pomodoroTimerModalContent">
-    {{#unless isActiveRoute regex='presentation|demo'}}
+    {{#if gotCardFeature 'pomodoro.forceModal'}}
         <div id="goalDiv" class="form-group row">
             <label class="col-xs-12 control-label" id="pomNumLabel" for="pomNumSlider"></label>
             <input class="numSlider col-xs-12" type=range min=1 max=16 value=1 id="pomNumSlider" step=1>
             <label id="workTime" class="col-xs-12 control-label"></label>
         </div>
-    {{/unless}}
+    {{/if}}
     <div id="settings" class="pomodoroBackground"
-         style="{{#if isHiddenByDefault}}display: none;{{/if}}">
+         style="{{#if gotCardFeature 'pomodoro.forceModal'}}display: none;{{/if}}">
         <div class="form-group row">
             <label for="workSlider" class="col-xs-12 control-label" style="float:left;"><i class="fas fa-desktop"></i>
                 <span id="workSliderLabel"></span>
@@ -125,7 +125,7 @@
                     <source src="/audio/Schulgong.mp3" type="audio/mpeg">
                 </audio>
             </div>
-            {{#unless isActiveRoute regex='presentation|demo'}}
+            {{#if gotCardFeature 'pomodoro.forceModal'}}
                 <div class="form-group row">
                     <input type="checkbox" id="sound2" value="Complete" checked>
                     <label for="sound2" class="control-label">{{_ "pomodoro.form.sounds.success"}}</label><br>
@@ -140,7 +140,7 @@
                         <source src="/audio/fail.mp3" type="audio/mpeg">
                     </audio>
                 </div>
-            {{/unless}}
+            {{/if}}
         {{/unless}}
     </div>
 </template>

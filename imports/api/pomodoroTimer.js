@@ -561,13 +561,13 @@ export let PomodoroTimer = class PomodoroTimer {
 
 	/*hides the goal box, shows the place where you can change the pomodoro length*/
 	static updateSettingsBtn () {
-		if (Route.isPresentation() || Route.isDemo()) {
-			$("#modalTitle").html(TAPi18n.__('pomodoro.form.presentation.title'));
-		} else if (!Route.isCardset()) {
-			$("#settings").toggle();
-			$("#goalDiv").toggle();
-			if ($("#modalTitle").html() === TAPi18n.__('pomodoro.form.user.title')) {
-				$("#modalTitle").html(TAPi18n.__('pomodoro.form.user.settings.title'));
+		$("#settings").toggle();
+		$("#goalDiv").toggle();
+		if ($("#modalTitle").html() === TAPi18n.__('pomodoro.form.user.title') || $("#modalTitle").html() === TAPi18n.__('pomodoro.form.presentation.title')) {
+			$("#modalTitle").html(TAPi18n.__('pomodoro.form.user.settings.title'));
+		} else {
+			if (Route.isPresentationOrDemo()) {
+				$("#modalTitle").html(TAPi18n.__('pomodoro.form.presentation.title'));
 			} else {
 				$("#modalTitle").html(TAPi18n.__('pomodoro.form.user.title'));
 			}

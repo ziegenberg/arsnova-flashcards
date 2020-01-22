@@ -10,6 +10,11 @@ const PRO = 2;
 const LECTURER = 3;
 const GUEST = 4;
 
+const PRESENTATION = 0;
+const LEITNER = 1; //Excludes Bonus
+const WOZNIAK = 2;
+const DEMO = 3;
+
 let defaultSettings = {
 	"navigationFeatures": { //Excludes Super Admins (Backend) and Editors (Frontend)
 		"useCases": { //Will be only visible if the related navigation item is enabled
@@ -70,6 +75,11 @@ let defaultSettings = {
 			"features": {
 				"bonus": [FREE, EDU, PRO, LECTURER]
 			}
+		}
+	},
+	"cardFeatures": {
+		"pomodoro": {
+			"forceModal": [LEITNER, WOZNIAK]
 		}
 	},
 	"login": {
@@ -186,6 +196,11 @@ let debug = {
 			"features": {
 				"bonus": [FREE, EDU, PRO, LECTURER]
 			}
+		}
+	},
+	"cardFeatures": {
+		"pomodoro": {
+			"forceModal": [LEITNER, WOZNIAK]
 		}
 	},
 	"login": {
@@ -307,6 +322,11 @@ let linux = {
 			}
 		}
 	},
+	"cardFeatures": {
+		"pomodoro": {
+			"forceModal": [PRESENTATION, LEITNER, WOZNIAK, DEMO]
+		}
+	},
 	"login": {
 		"cas": true,
 		"guest": true,
@@ -421,6 +441,11 @@ let review = {
 			"features": {
 				"bonus": [FREE, EDU, PRO, LECTURER]
 			}
+		}
+	},
+	"cardFeatures": {
+		"pomodoro": {
+			"forceModal": [LEITNER, WOZNIAK]
 		}
 	},
 	"login": {
@@ -540,6 +565,11 @@ let staging = {
 			"features": {
 				"bonus": [FREE, EDU, PRO, LECTURER]
 			}
+		}
+	},
+	"cardFeatures": {
+		"pomodoro": {
+			"forceModal": [LEITNER, WOZNIAK]
 		}
 	},
 	"login": {

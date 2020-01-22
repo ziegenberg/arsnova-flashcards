@@ -388,6 +388,10 @@ Template.registerHelper("getKindText", function (kind, displayType = 0) {
 	return CardsetVisuals.getKindText(kind, displayType);
 });
 
+Template.registerHelper("gotCardFeature", function (feature) {
+	return ServerStyle.gotCardFeature(feature);
+});
+
 Template.registerHelper("getCardTypeLabel", function (cardType) {
 	return '<span class="label label-card-type" data-id="' + cardType + '" title="' + TAPi18n.__('card.cardType' + cardType + '.longName') + '">' + TAPi18n.__('card.cardType' + cardType + '.name') + '</span>';
 });

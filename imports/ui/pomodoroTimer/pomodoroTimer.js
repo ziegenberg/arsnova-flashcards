@@ -6,6 +6,7 @@ import {Bonus} from "../../api/bonus";
 import {Route} from "../../api/route";
 import {CardVisuals} from "../../api/cardVisuals";
 import {Session} from "meteor/session";
+import {ServerStyle} from "../../api/styles";
 
 /*
  * ############################################################################
@@ -68,24 +69,22 @@ Template.pomodoroTimerModal.onRendered(function () {
 		if (Bonus.isInBonus(Router.current().params._id)) {
 			PomodoroTimer.start();
 		} else {
-			if (!PomodoroTimer.isPomodoroRunning()) {
-				if (Route.isDefaultPresentation() || Route.isPresentationList()) {
-					PomodoroTimer.initializeVariables();
-					PomodoroTimer.initializeModalContent();
-					PomodoroTimer.start();
-				} else {
-					$('#pomodoroTimerModal').modal('show');
+			if (ServerStyle.gotCardFeature("pomodoro.forceModal")) {
+				$('#pomodoroTimerModal').modal('show');
+			} else {
+				if (!PomodoroTimer.isPomodoroRunning()) {
+					if (Route.isDefaultPresentation() || Route.isPresentationList()) {
+						PomodoroTimer.initializeVariables();
+						PomodoroTimer.initializeModalContent();
+						PomodoroTimer.start();
+					} else {
+						$('#pomodoroTimerModal').modal('show');
+					}
 				}
 			}
 		}
-	}
-});
-
-Template.pomodoroTimerModal.helpers({
-	requiresUserInputForFullscreen: function () {
-		if (!Route.isPresentation()) {
-			return Route.requiresUserInputForFullscreen();
-		}
+	} else if (ServerStyle.gotCardFeature("pomodoro.forceModal")) {
+		$('#pomodoroTimerModal').modal('show');
 	}
 });
 
@@ -120,11 +119,6 @@ Template.pomodoroTimerModal.events({
  * ############################################################################
  */
 
-Template.pomodoroTimerModalContent.helpers({
-	isHiddenByDefault: function () {
-		return !Route.isCardset() && !Route.isPresentation() && !Route.isDemo();
-	}
-});
 Template.pomodoroTimerModalContent.events({
 	'input #pomNumSlider': function () {
 		PomodoroTimer.updatePomNumSlider();

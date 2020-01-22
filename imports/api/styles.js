@@ -5,12 +5,18 @@ import {Session} from "meteor/session";
 import {UserPermissions} from "./permissions";
 import {MainNavigation} from "./mainNavigation";
 import {Route} from "./route";
+import {Bonus} from "./bonus";
 
 const FREE = 0;
 const EDU = 1;
 const PRO = 2;
 const LECTURER = 3;
 const GUEST = 4;
+
+const PRESENTATION = 0;
+const LEITNER = 1; //Excludes Bonus
+const WOZNIAK = 2;
+const DEMO = 3;
 
 export let ServerStyle = class ServerStyle {
 
@@ -239,5 +245,30 @@ export let ServerStyle = class ServerStyle {
 			list.push('pro');
 		}
 		return list;
+	}
+
+	static gotCardFeature (feature) {
+		let featurePath = feature.split('.');
+		if (featurePath.length < 2) {
+			return false;
+		}
+		let routeType = -1;
+
+		if (Route.isPresentation()) {
+			routeType = PRESENTATION;
+		} else if (Route.isDemo()) {
+			routeType = DEMO;
+		} else if (Route.isBox() && !Bonus.isInBonus(Router.current().params._id)) {
+			routeType = LEITNER;
+		} else if (Route.isMemo()) {
+			routeType = WOZNIAK;
+		}
+
+		if (routeType !== -1) {
+			let cardFeatures = this.getConfig().cardFeatures;
+			if (cardFeatures[featurePath[0]][featurePath[1]] !== undefined) {
+				return cardFeatures[featurePath[0]][featurePath[1]].includes(routeType);
+			}
+		}
 	}
 };
