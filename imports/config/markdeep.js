@@ -35,6 +35,20 @@ let defaultMathJaxConfig = {
 	messageStyle: "none"
 };
 
+//Requires 3 fields for each array: regexp, modifier and replacement
+let cardsetIndexFilter = [
+	// Remove links
+	['\!{0,1}\[(.*?)\]\(.*?\)', 'g', '$1'],
+	// Remove blockquotes
+	['^\s{0,3}>\s?', 'g', ''],
+	// Remove code blocks
+	['(`{3,})(.*?)\1', 'gm', '$2'],
+	// Remove inline code
+	['`(.+?)`', 'g', '$1'],
+	// Headlines
+	['\(#{0,6}\)', 'g', '']
+];
+
 let plantUML = {
 	regexp: {
 		pre: "[`]{3}\\s*plantuml\\s*@startuml",
@@ -51,6 +65,7 @@ module.exports = {
 	customMathJaxDefinitions,
 	MathJaxSourceUrl,
 	defaultMathJaxConfig,
-	plantUML
+	plantUML,
+	cardsetIndexFilter
 };
 

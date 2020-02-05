@@ -1,6 +1,7 @@
 import {Session} from "meteor/session";
 import {Route} from "./route";
 import {CardVisuals} from "./cardVisuals";
+import {MarkdeepContent} from "./markdeep";
 
 /*
 Modes:
@@ -89,7 +90,7 @@ export let Dictionary = class Dictionary {
 		switch (mode) {
 			case 1:
 				if (this.getWordCount() === 1) {
-					return queryStart + CardVisuals.removeMarkdeepTags(searchText);
+					return queryStart + MarkdeepContent.removeTags(searchText);
 				}
 				return;
 			case 2:
@@ -99,7 +100,7 @@ export let Dictionary = class Dictionary {
 						query +=  "%20";
 					}
 					let rawQuery = searchText.split(/\s+/);
-					query += CardVisuals.removeMarkdeepTags(rawQuery[i]).trim();
+					query += MarkdeepContent.removeTags(rawQuery[i]).trim();
 				}
 				return queryStart + query;
 		}

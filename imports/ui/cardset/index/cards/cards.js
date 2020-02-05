@@ -8,6 +8,7 @@ import {Cardsets} from "../../../../api/subscriptions/cardsets";
 import {Route} from "../../../../api/route";
 import {CardNavigation} from "../../../../api/cardNavigation";
 import "./cards.html";
+import {MarkdeepContent} from "../../../../api/markdeep";
 
 /*
  * ############################################################################
@@ -56,7 +57,7 @@ Template.cardsetList.helpers({
 		return index + 1;
 	},
 	cleanContent: function (text) {
-		return CardVisuals.removeMarkdeepTags(text);
+		return MarkdeepContent.removeTags(text);
 	},
 	gotCards: function () {
 		if (Router.current().route.getName() === "cardsetlistid" || Router.current().route.getName() === "presentationlist" || Router.current().route.getName() === "demolist" || Router.current().route.getName() === "makinglist") {
