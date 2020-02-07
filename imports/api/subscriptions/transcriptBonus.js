@@ -1,9 +1,9 @@
 import {Mongo} from "meteor/mongo";
 import {Meteor} from "meteor/meteor";
 import {Cardsets} from "./cardsets";
-import {UserPermissions} from "../permissions";
+import {UserPermissions} from "../../utils/userPermissions";
 import {SimpleSchema} from "meteor/aldeed:simple-schema";
-import {TranscriptBonusList} from "../transcriptBonus";
+import {TranscriptBonusList} from "../../utils/transcriptBonus";
 
 export const TranscriptBonus = new Mongo.Collection("transcriptBonus");
 

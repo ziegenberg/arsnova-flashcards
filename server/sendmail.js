@@ -1,12 +1,12 @@
 import {Meteor} from "meteor/meteor";
 import {Email} from "meteor/email";
-import {Bonus} from "../imports/api/bonus.js";
+import {Bonus} from "../imports/utils/bonus.js";
 import {Leitner} from "../imports/api/subscriptions/leitner.js";
 import {Notifications} from "./notifications.js";
 import {AdminSettings} from "../imports/api/subscriptions/adminSettings.js";
 import {Cardsets} from "../imports/api/subscriptions/cardsets.js";
-import {getAuthorName} from "../imports/api/userdata";
-import {ServerStyle} from "../imports/api/styles";
+import {Profile} from "../imports/utils/profile";
+import {ServerStyle} from "../imports/utils/serverStyle";
 
 /**
  * Class used for sending the newsletter mail
@@ -56,7 +56,7 @@ export class MailNotifier {
 			throw new Meteor.Error("not-authorized");
 		} else {
 			var notifier = new Notifications();
-			var firstName = getAuthorName(user_id, false, true);
+			var firstName = Profile.getAuthorName(user_id, false, true);
 			var cards = notifier.getActiveCardsCount(cardset._id, user_id);
 			var subject = '»' + cardset.name + '« ';
 			subject += TAPi18n.__('mailNotification.subjectTitle', {lastAppTitle: ServerStyle.getLastAppTitle()}, ServerStyle.getServerLanguage());
@@ -86,7 +86,7 @@ export class MailNotifier {
 		if (!Meteor.isServer) {
 			throw new Meteor.Error("not-authorized");
 		} else {
-			var firstName = getAuthorName(user_id, false, true);
+			var firstName = Profile.getAuthorName(user_id, false, true);
 			var subject = '»' + cardset.name + '« ' + TAPi18n.__('mailNotification.subjectReset', null, ServerStyle.getServerLanguage());
 			var text = TAPi18n.__('mailNotification.mailCard', null, ServerStyle.getServerLanguage()) + cardset.name + TAPi18n.__('mailNotification.mailCard1', null, ServerStyle.getServerLanguage()) + "\n\n";
 			var name = TAPi18n.__('mailNotification.textIntro', {firstName: firstName[0]}, ServerStyle.getServerLanguage());

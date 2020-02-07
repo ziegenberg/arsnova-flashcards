@@ -2,8 +2,8 @@ import "./modal.html";
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
 import {Meteor} from "meteor/meteor";
-import {Route} from "../../../api/route";
-import {MainNavigation} from "../../../api/mainNavigation";
+import {Route} from "../../../utils/route";
+import {MainNavigation} from "../../../utils/mainNavigation";
 
 //0 = Nothing
 //1 = CreateCardIndex

@@ -1,6 +1,6 @@
-import {Profile} from "../../../../api/profile";
+import {Profile} from "../../../../utils/profile";
 import {Session} from "meteor/session";
-import {SweetAlertMessages} from "../../../../api/sweetAlert";
+import {SweetAlertMessages} from "../../../../utils/sweetAlertMessages";
 import {Template} from "meteor/templating";
 import "./createRepetitoriumButton.html";
 

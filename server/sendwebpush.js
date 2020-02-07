@@ -3,7 +3,7 @@ import {Notifications} from "./notifications.js";
 import {Leitner} from "../imports/api/subscriptions/leitner.js";
 import {AdminSettings} from "../imports/api/subscriptions/adminSettings.js";
 import {Cardsets} from "../imports/api/subscriptions/cardsets.js";
-import {ServerStyle} from "../imports/api/styles";
+import {ServerStyle} from "../imports/utils/serverStyle";
 
 function getDateString(date) {
 	let dateFormat = "dddd";

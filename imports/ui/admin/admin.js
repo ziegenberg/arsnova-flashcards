@@ -3,7 +3,7 @@
 import {Meteor} from "meteor/meteor";
 import {Template} from "meteor/templating";
 import {Notifications} from "../../api/subscriptions/notifications";
-import {MainNavigation} from "../../api/mainNavigation";
+import {MainNavigation} from "../../utils/mainNavigation";
 import "./admin.html";
 import "./dashboard/dashboard.js";
 import "./users/index.js";

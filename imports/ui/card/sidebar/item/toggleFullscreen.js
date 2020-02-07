@@ -1,12 +1,12 @@
 import {Session} from "meteor/session";
 import "./toggleFullscreen.html";
-import {CardVisuals} from "../../../../api/cardVisuals";
-import {PomodoroTimer} from "../../../../api/pomodoroTimer";
-import {Route} from "../../../../api/route";
+import {CardVisuals} from "../../../../utils/cardVisuals";
+import {PomodoroTimer} from "../../../../utils/pomodoroTimer";
+import {Route} from "../../../../utils/route";
 import {Template} from "meteor/templating";
-import {Dictionary} from "../../../../api/dictionary";
-import {FirstTimeVisit} from "../../../../api/firstTimeVisit";
-import {AspectRatio} from "../../../../api/aspectRatio";
+import {Dictionary} from "../../../../utils/dictionary";
+import {FirstTimeVisit} from "../../../../utils/firstTimeVisit";
+import {AspectRatio} from "../../../../utils/aspectRatio";
 
 /*
  * ############################################################################

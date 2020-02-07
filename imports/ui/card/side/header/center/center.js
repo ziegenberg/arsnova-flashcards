@@ -1,13 +1,13 @@
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
-import {CardEditor} from "../../../../../api/cardEditor";
-import {Route} from "../../../../../api/route";
+import {CardEditor} from "../../../../../utils/cardEditor";
+import {Route} from "../../../../../utils/route";
 import {Cardsets} from "../../../../../api/subscriptions/cardsets";
-import {CardType} from "../../../../../api/cardTypes";
+import {CardType} from "../../../../../utils/cardTypes";
 import "./center.html";
-import {MarkdeepEditor} from "../../../../../api/markdeepEditor";
+import {MarkdeepEditor} from "../../../../../utils/markdeepEditor";
 import {TranscriptBonus} from "../../../../../api/subscriptions/transcriptBonus";
-import {TranscriptBonusList} from "../../../../../api/transcriptBonus";
+import {TranscriptBonusList} from "../../../../../utils/transcriptBonus";
 
 /*
  * ############################################################################

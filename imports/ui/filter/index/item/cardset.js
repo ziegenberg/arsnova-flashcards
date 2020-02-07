@@ -4,9 +4,9 @@ import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import "../../../cardset/cardset.js";
 import "./cardset.html";
-import {MainNavigation} from "../../../../api/mainNavigation";
-import {LoginTasks} from "../../../../api/login";
-import {Route} from "../../../../api/route";
+import {MainNavigation} from "../../../../utils/mainNavigation";
+import {LoginTasks} from "../../../../utils/loginTasks";
+import {Route} from "../../../../utils/route";
 
 Session.setDefault('cardsetId', undefined);
 Session.set('moduleActive', true);

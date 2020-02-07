@@ -5,15 +5,15 @@ import {Template} from "meteor/templating";
 import {Leitner} from "../../../api/subscriptions/leitner";
 import {Wozniak} from "../../../api/subscriptions/wozniak";
 import ResizeSensor from "../../../../client/thirdParty/resizeSensor/ResizeSensor";
-import {CardsetVisuals} from "../../../api/cardsetVisuals";
-import {Bonus} from "../../../api/bonus";
-import {MarkdeepContent} from "../../../api/markdeep";
+import {CardsetVisuals} from "../../../utils/cardsetVisuals";
+import {Bonus} from "../../../utils/bonus";
+import {MarkdeepContent} from "../../../utils/markdeepContent";
 import "../navigation/navigation.js";
 import "./box/cardset.js";
 import "./box/bonus.js";
 import "./box/bonusTranscript.js";
 import "./info.html";
-import {ServerStyle} from "../../../api/styles";
+import {ServerStyle} from "../../../utils/serverStyle";
 
 /*
  * ############################################################################

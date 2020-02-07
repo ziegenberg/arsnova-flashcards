@@ -2,11 +2,11 @@
 
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
-import {Filter} from "../../../api/filter";
+import {Filter} from "../../../utils/filter";
 import {Cards} from "../../../api/subscriptions/cards";
 import {Cardsets} from "../../../api/subscriptions/cardsets";
-import {CardType} from "../../../api/cardTypes";
-import {Route} from "../../../api/route";
+import {CardType} from "../../../utils/cardTypes";
+import {Route} from "../../../utils/route";
 import "./navigation.html";
 import './item/resetButton.js';
 import './item/sortResults.js';

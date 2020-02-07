@@ -1,7 +1,7 @@
 //------------------------ IMPORTS
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
-import {AspectRatio} from "../../../../api/aspectRatio.js";
+import {AspectRatio} from "../../../../utils/aspectRatio.js";
 import "./presentation.html";
 
 /*

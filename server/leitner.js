@@ -4,9 +4,9 @@ import {Workload} from "../imports/api/subscriptions/workload";
 import {Cardsets} from "../imports/api/subscriptions/cardsets";
 import {MailNotifier} from "./sendmail.js";
 import {WebNotifier} from "./sendwebpush.js";
-import {Bonus} from "../imports/api/bonus";
-import {LeitnerUtilities} from "../imports/api/leitner";
-import {ServerSettings} from "../imports/api/settings";
+import {Bonus} from "../imports/utils/bonus";
+import {LeitnerUtilities} from "../imports/api/meteorMethods/leitner";
+import {ServerSettings} from "../imports/utils/serverSettings";
 
 /** Function gets called when the learning-phase ended and excludes the cardset from the leitner algorithm
  *  @param {Object} cardset - The cardset from the active learning-phase

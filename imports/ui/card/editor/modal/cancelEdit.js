@@ -1,6 +1,6 @@
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
-import {Route} from "../../../../api/route.js";
+import {Route} from "../../../../utils/route.js";
 import "./cancelEdit.html";
 
 /*

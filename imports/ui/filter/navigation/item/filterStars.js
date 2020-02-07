@@ -1,5 +1,5 @@
 import "./filterStars.html";
-import {Filter} from "../../../../api/filter";
+import {Filter} from "../../../../utils/filter";
 import {TranscriptBonus} from "../../../../api/subscriptions/transcriptBonus";
 
 /*

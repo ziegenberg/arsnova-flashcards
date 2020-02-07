@@ -1,5 +1,5 @@
 import "./endPresentation.html";
-import {Route} from "../../../../api/route";
+import {Route} from "../../../../utils/route";
 
 /*
  * ############################################################################

@@ -1,9 +1,9 @@
 import {Session} from "meteor/session";
 import "./edit.html";
-import {Route} from "../../../../api/route";
+import {Route} from "../../../../utils/route";
 import {Cards} from "../../../../api/subscriptions/cards";
 import {Cardsets} from "../../../../api/subscriptions/cardsets";
-import {CardNavigation} from "../../../../api/cardNavigation";
+import {CardNavigation} from "../../../../utils/cardNavigation";
 /*
  * ############################################################################
  * cardSidebarItemEdit

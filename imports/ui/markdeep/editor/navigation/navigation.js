@@ -1,10 +1,10 @@
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
-import {MarkdeepEditor} from "../../../../api/markdeepEditor.js";
-import {CardVisuals} from "../../../../api/cardVisuals";
-import {Dictionary} from "../../../../api/dictionary";
-import {CardType} from "../../../../api/cardTypes";
-import {Route} from "../../../../api/route";
+import {MarkdeepEditor} from "../../../../utils/markdeepEditor.js";
+import {CardVisuals} from "../../../../utils/cardVisuals";
+import {Dictionary} from "../../../../utils/dictionary";
+import {CardType} from "../../../../utils/cardTypes";
+import {Route} from "../../../../utils/route";
 import "./navigation.html";
 
 /*

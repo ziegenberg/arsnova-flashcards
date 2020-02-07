@@ -2,13 +2,13 @@ import {Mongo} from "meteor/mongo";
 import {Cardsets} from "../subscriptions/cardsets";
 import {Meteor} from "meteor/meteor";
 import {TranscriptBonus} from "./transcriptBonus";
-import {TranscriptBonusList} from "../transcriptBonus";
-import {UserPermissions} from "../permissions";
-import {ServerStyle} from "../styles";
+import {TranscriptBonusList} from "../../utils/transcriptBonus";
+import {UserPermissions} from "../../utils/userPermissions";
+import {ServerStyle} from "../../utils/serverStyle";
 import {Paid} from "./paid";
-import {CardType} from "../cardTypes";
+import {CardType} from "../../utils/cardTypes";
 import {SimpleSchema} from "meteor/aldeed:simple-schema";
-import {CardEditor} from "../cardEditor";
+import {CardEditor} from "../../utils/cardEditor";
 
 export const Cards = new Mongo.Collection("cards");
 

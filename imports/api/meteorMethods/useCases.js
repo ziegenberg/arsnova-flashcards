@@ -1,6 +1,6 @@
 import {Meteor} from "meteor/meteor";
 import {check} from "meteor/check";
-import {UserPermissions} from "../permissions";
+import {UserPermissions} from "../../utils/userPermissions";
 import {Cardsets} from "../subscriptions/cardsets";
 
 Meteor.methods({

@@ -1,8 +1,8 @@
 import "./dictionary.html";
 import {Session} from "meteor/session";
-import {CardType} from "../../../../api/cardTypes";
-import {Dictionary} from "../../../../api/dictionary";
-import {MarkdeepEditor} from "../../../../api/markdeepEditor";
+import {CardType} from "../../../../utils/cardTypes";
+import {Dictionary} from "../../../../utils/dictionary";
+import {MarkdeepEditor} from "../../../../utils/markdeepEditor";
 
 /*
  * ############################################################################

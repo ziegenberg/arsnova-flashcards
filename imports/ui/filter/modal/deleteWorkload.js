@@ -4,7 +4,7 @@ import {Meteor} from "meteor/meteor";
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import {Workload} from "../../../api/subscriptions/workload";
-import {Filter} from "../../../api/filter";
+import {Filter} from "../../../utils/filter";
 import "./deleteWorkload.html";
 
 /*

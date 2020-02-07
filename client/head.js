@@ -5,7 +5,7 @@ import "../imports/startup/client/registerServiceWorker";
 import "../imports/startup/client/routes.js";
 import "../imports/ui/main/main.js";
 import {Session} from "meteor/session";
-import {ServerStyle} from "../imports/api/styles.js";
+import {ServerStyle} from "../imports/utils/serverStyle.js";
 
 window.addEventListener("load", function () {
 	window.cookieconsent.initialise({

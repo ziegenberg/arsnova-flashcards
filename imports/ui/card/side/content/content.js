@@ -1,9 +1,9 @@
 import {Template} from "meteor/templating";
-import {CardVisuals} from "../../../../api/cardVisuals.js";
-import {CardType} from "../../../../api/cardTypes";
-import {Route} from "../../../../api/route.js";
-import {MarkdeepContent} from "../../../../api/markdeep";
-import {Dictionary} from "../../../../api/dictionary";
+import {CardVisuals} from "../../../../utils/cardVisuals.js";
+import {CardType} from "../../../../utils/cardTypes";
+import {Route} from "../../../../utils/route.js";
+import {MarkdeepContent} from "../../../../utils/markdeepContent";
+import {Dictionary} from "../../../../utils/dictionary";
 import "./content.html";
 
 /*

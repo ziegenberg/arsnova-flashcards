@@ -1,6 +1,6 @@
 //------------------------ IMPORTS
 import {Template} from "meteor/templating";
-import {CardType} from "../../../../../api/cardTypes";
+import {CardType} from "../../../../../utils/cardTypes";
 import "./difficulty.html";
 
 /*

@@ -6,15 +6,15 @@ import {Session} from "meteor/session";
 import {Leitner} from "../../api/subscriptions/leitner";
 import {Wozniak} from "../../api/subscriptions/wozniak";
 import {Cardsets} from "../../api/subscriptions/cardsets";
-import {CardNavigation} from "../../api/cardNavigation";
+import {CardNavigation} from "../../utils/cardNavigation";
 import "./learn.html";
-import {PomodoroTimer} from "../../api/pomodoroTimer";
-import {Bonus} from "../../api/bonus";
-import {Route} from "../../api/route";
-import {MainNavigation} from "../../api/mainNavigation";
-import {CardsetNavigation} from "../../api/cardsetNavigation";
-import {NavigatorCheck} from "../../api/navigatorCheck";
-import {CardVisuals} from "../../api/cardVisuals";
+import {PomodoroTimer} from "../../utils/pomodoroTimer";
+import {Bonus} from "../../utils/bonus";
+import {Route} from "../../utils/route";
+import {MainNavigation} from "../../utils/mainNavigation";
+import {CardsetNavigation} from "../../utils/cardsetNavigation";
+import {NavigatorCheck} from "../../utils/navigatorCheck";
+import {CardVisuals} from "../../utils/cardVisuals";
 Session.set('animationPlaying', false);
 
 /*

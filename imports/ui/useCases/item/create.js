@@ -1,7 +1,7 @@
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
-import {CardType} from "../../../api/cardTypes";
-import {ServerStyle} from "../../../api/styles";
+import {CardType} from "../../../utils/cardTypes";
+import {ServerStyle} from "../../../utils/serverStyle";
 import "./create.html";
 
 Template.useCasesItemCreateDropdown.helpers({

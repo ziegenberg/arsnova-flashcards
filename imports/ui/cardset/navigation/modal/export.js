@@ -2,10 +2,10 @@
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
 import {Meteor} from "meteor/meteor";
-import {BertAlertVisuals} from "../../../../api/bertAlertVisuals";
-import {MarkdeepContent} from "../../../../api/markdeep";
+import {BertAlertVisuals} from "../../../../utils/bertAlertVisuals";
+import {MarkdeepContent} from "../../../../utils/markdeepContent";
 import {Cards} from "../../../../api/subscriptions/cards";
-import {CardType} from "../../../../api/cardTypes";
+import {CardType} from "../../../../utils/cardTypes";
 import "./export.html";
 
 Session.setDefault('exportType', 1);

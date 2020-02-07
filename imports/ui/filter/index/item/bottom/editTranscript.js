@@ -1,8 +1,8 @@
 import "./editTranscript.html";
 import {Template} from "meteor/templating";
-import {Route} from "../../../../../api/route";
+import {Route} from "../../../../../utils/route";
 import {TranscriptBonus} from "../../../../../api/subscriptions/transcriptBonus";
-import {TranscriptBonusList} from "../../../../../api/transcriptBonus";
+import {TranscriptBonusList} from "../../../../../utils/transcriptBonus";
 
 /*
  * ############################################################################

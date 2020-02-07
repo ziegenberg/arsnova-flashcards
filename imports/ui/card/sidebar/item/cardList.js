@@ -1,7 +1,7 @@
 import {Session} from "meteor/session";
 import "./cardList.html";
-import {CardIndex} from "../../../../api/cardIndex";
-import {CardsetNavigation} from "../../../../api/cardsetNavigation";
+import {CardIndex} from "../../../../utils/cardIndex";
+import {CardsetNavigation} from "../../../../utils/cardsetNavigation";
 
 /*
  * ############################################################################

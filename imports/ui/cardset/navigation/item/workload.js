@@ -1,7 +1,7 @@
 //------------------------ IMPORTS
 import {Meteor} from "meteor/meteor";
 import {Template} from "meteor/templating";
-import {CardType} from "../../../../api/cardTypes";
+import {CardType} from "../../../../utils/cardTypes";
 import {Workload} from "../../../../api/subscriptions/workload";
 import {Wozniak} from "../../../../api/subscriptions/wozniak";
 import {Cardsets} from "../../../../api/subscriptions/cardsets";

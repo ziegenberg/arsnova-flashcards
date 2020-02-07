@@ -1,7 +1,7 @@
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
-import {ServerStyle} from "../../../api/styles";
-import {UserPermissions} from "../../../api/permissions";
+import {ServerStyle} from "../../../utils/serverStyle";
+import {UserPermissions} from "../../../utils/userPermissions";
 import "./repetitorium.html";
 
 Template.useCasesItemRepetitorium.helpers({

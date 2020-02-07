@@ -1,12 +1,12 @@
-import {WordcloudCanvas} from "../../api/wordcloudCanvas";
+import {WordcloudCanvas} from "../../utils/wordcloudCanvas";
 import ResizeSensor from "../../../client/thirdParty/resizeSensor/ResizeSensor";
 import {Cardsets} from "../../api/subscriptions/cardsets.js";
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
 import "./help/help.js";
 import "./wordcloud.html";
-import {NavigatorCheck} from "../../api/navigatorCheck";
-import {Route} from "../../api/route";
+import {NavigatorCheck} from "../../utils/navigatorCheck";
+import {Route} from "../../utils/route";
 
 /*
  * ############################################################################

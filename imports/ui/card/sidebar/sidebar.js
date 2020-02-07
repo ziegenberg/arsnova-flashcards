@@ -1,7 +1,7 @@
 //------------------------ IMPORTS
 
 import {Template} from "meteor/templating";
-import {CardVisuals} from "../../../api/cardVisuals";
+import {CardVisuals} from "../../../utils/cardVisuals";
 import "./sidebar.html";
 import "./item/aspectRatio.js";
 import "./item/arsnovaClick.js";
@@ -22,9 +22,9 @@ import "./item/help.js";
 import "./item/swapQuestionAnswer.js";
 import "./item/presentation.js";
 import "./item/toggle3D.js";
-import {Route} from "../../../api/route";
-import {Bonus} from "../../../api/bonus";
-import {NavigatorCheck} from "../../../api/navigatorCheck";
+import {Route} from "../../../utils/route";
+import {Bonus} from "../../../utils/bonus";
+import {NavigatorCheck} from "../../../utils/navigatorCheck";
 
 /*
  * ############################################################################

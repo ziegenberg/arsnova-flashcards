@@ -2,9 +2,9 @@ import "./reviewButton.html";
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import {TranscriptBonus} from "../../../../../../api/subscriptions/transcriptBonus";
-import {TranscriptBonusList} from "../../../../../../api/transcriptBonus";
-import {FilterNavigation} from "../../../../../../api/filterNavigation";
-import {Filter} from "../../../../../../api/filter";
+import {TranscriptBonusList} from "../../../../../../utils/transcriptBonus";
+import {FilterNavigation} from "../../../../../../utils/filterNavigation";
+import {Filter} from "../../../../../../utils/filter";
 
 Session.setDefault('transcriptBonusReviewCount', 0);
 Session.setDefault('transcriptBonusReviewFilter', undefined);

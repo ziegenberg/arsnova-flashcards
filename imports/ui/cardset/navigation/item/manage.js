@@ -2,7 +2,7 @@
 import {Meteor} from "meteor/meteor";
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
-import {Bonus} from "../../../../api/bonus";
+import {Bonus} from "../../../../utils/bonus";
 import "../modal/editors.js";
 import "../modal/leaveCardset.js";
 import "../modal/report.js";

@@ -2,10 +2,10 @@
 import {Meteor} from "meteor/meteor";
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
-import {CardType} from "../../../../api/cardTypes";
-import {Bonus} from "../../../../api/bonus";
+import {CardType} from "../../../../utils/cardTypes";
+import {Bonus} from "../../../../utils/bonus";
 import {Cardsets} from "../../../../api/subscriptions/cardsets";
-import {BertAlertVisuals} from "../../../../api/bertAlertVisuals";
+import {BertAlertVisuals} from "../../../../utils/bertAlertVisuals";
 import "../modal/leaveBonus.js";
 import "../modal/endBonus.js";
 import "../modal/bonus/simulator/leitnerSimulator.js";

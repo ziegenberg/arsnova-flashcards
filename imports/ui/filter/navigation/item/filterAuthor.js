@@ -1,10 +1,10 @@
 import "./filterAuthor.html";
 import {Template} from "meteor/templating";
 import {Meteor} from "meteor/meteor";
-import {Filter} from "../../../../api/filter";
+import {Filter} from "../../../../utils/filter";
 import {Cardsets} from "../../../../api/subscriptions/cardsets";
-import {getAuthorName} from "../../../../api/userdata";
-import {Route} from "../../../../api/route";
+import {Profile} from "../../../../utils/profile";
+import {Route} from "../../../../utils/route";
 import {TranscriptBonus} from "../../../../api/subscriptions/transcriptBonus";
 
 /*
@@ -37,7 +37,7 @@ Template.filterItemFilterAuthors.helpers({
 		return Meteor.users.find({_id: {$in: userFilter}}, {fields: {_id: 1, profile: 1}, sort: {"profile.birthname": 1, "profile.name": 1}}).fetch();
 	},
 	getAuthorName: function (profile) {
-		return getAuthorName(profile._id, true, false,false, profile);
+		return Profile.getAuthorName(profile._id, true, false,false, profile);
 	},
 	resultsFilterAuthor: function (id) {
 		if (Route.isTranscriptBonus()) {

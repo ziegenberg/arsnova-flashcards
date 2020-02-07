@@ -1,8 +1,8 @@
 import "./backToCardset.html";
-import {Route} from "../../../../api/route";
-import {PomodoroTimer} from "../../../../api/pomodoroTimer";
+import {Route} from "../../../../utils/route";
+import {PomodoroTimer} from "../../../../utils/pomodoroTimer";
 import {Template} from "meteor/templating";
-import {Bonus} from "../../../../api/bonus";
+import {Bonus} from "../../../../utils/bonus";
 
 /*
  * ############################################################################

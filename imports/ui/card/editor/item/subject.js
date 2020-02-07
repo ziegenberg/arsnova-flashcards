@@ -1,7 +1,7 @@
-import {CardType} from "../../../../api/cardTypes";
-import {CardEditor} from "../../../../api/cardEditor.js";
+import {CardType} from "../../../../utils/cardTypes";
+import {CardEditor} from "../../../../utils/cardEditor.js";
 import {Session} from "meteor/session";
-import {TranscriptBonusList} from "../../../../api/transcriptBonus";
+import {TranscriptBonusList} from "../../../../utils/transcriptBonus";
 import "./subject.html";
 
 /*

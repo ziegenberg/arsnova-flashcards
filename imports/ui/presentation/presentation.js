@@ -3,14 +3,14 @@
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import "./presentation.html";
-import {CardNavigation} from "../../api/cardNavigation";
+import {CardNavigation} from "../../utils/cardNavigation";
 import {Cardsets} from "../../api/subscriptions/cardsets";
 import {Cards} from "../../api/subscriptions/cards";
-import {PomodoroTimer} from "../../api/pomodoroTimer";
-import {Route} from "../../api/route";
-import {AspectRatio} from "../../api/aspectRatio";
+import {PomodoroTimer} from "../../utils/pomodoroTimer";
+import {Route} from "../../utils/route";
+import {AspectRatio} from "../../utils/aspectRatio";
 import {TranscriptBonus} from "../../api/subscriptions/transcriptBonus";
-import {CardVisuals} from "../../api/cardVisuals";
+import {CardVisuals} from "../../utils/cardVisuals";
 
 Session.set('animationPlaying', false);
 Session.setDefault('isDirectCardsetIndexView', false);

@@ -1,6 +1,6 @@
 //------------------------ IMPORTS
 import {Template} from "meteor/templating";
-import {Route} from "../../api/route.js";
+import {Route} from "../../utils/route.js";
 import "./impressum.html";
 import "./modal/statistics/statistics.js";
 import "./pages/cards/about/about.js";

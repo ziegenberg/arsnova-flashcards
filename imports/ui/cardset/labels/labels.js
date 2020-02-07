@@ -1,4 +1,4 @@
-import {LeitnerProgress} from "../../../api/leitnerProgress";
+import {LeitnerProgress} from "../../../utils/leitnerProgress";
 import {Template} from "meteor/templating";
 import "./labels.html";
 

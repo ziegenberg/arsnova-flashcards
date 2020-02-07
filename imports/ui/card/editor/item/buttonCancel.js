@@ -1,8 +1,8 @@
 import "./buttonCancel.html";
 import {Template} from "meteor/templating";
-import {Route} from "../../../../api/route";
+import {Route} from "../../../../utils/route";
 import {Session} from "meteor/session";
-import {CardEditor} from "../../../../api/cardEditor";
+import {CardEditor} from "../../../../utils/cardEditor";
 
 /*
  * ############################################################################

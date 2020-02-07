@@ -1,14 +1,14 @@
 //------------------------ IMPORTS
 import {Template} from "meteor/templating";
-import {Route} from "../../../api/route";
-import {CardIndex} from "../../../api/cardIndex";
-import {CardVisuals} from "../../../api/cardVisuals";
+import {Route} from "../../../utils/route";
+import {CardIndex} from "../../../utils/cardIndex";
+import {CardVisuals} from "../../../utils/cardVisuals";
 import {Session} from "meteor/session";
-import {CardType} from "../../../api/cardTypes";
+import {CardType} from "../../../utils/cardTypes";
 import './header/header.js';
 import './content/content.js';
 import './side.html';
-import {CardNavigation} from "../../../api/cardNavigation";
+import {CardNavigation} from "../../../utils/cardNavigation";
 
 Template.cardSide.helpers({
 	isCardset: function () {

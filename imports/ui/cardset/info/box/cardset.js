@@ -18,7 +18,7 @@ import "./item/ratings.js";
 import "./item/reviewer.js";
 import "./item/wordcloud.js";
 import "./cardset.html";
-import {CardsetVisuals} from "../../../../api/cardsetVisuals";
+import {CardsetVisuals} from "../../../../utils/cardsetVisuals";
 
 /*
  * ############################################################################

@@ -3,8 +3,8 @@ import {Meteor} from "meteor/meteor";
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
 import {Workload} from "../../../../api/subscriptions/workload";
-import {CardsetNavigation} from "../../../../api/cardsetNavigation";
-import {BertAlertVisuals} from "../../../../api/bertAlertVisuals";
+import {CardsetNavigation} from "../../../../utils/cardsetNavigation";
+import {BertAlertVisuals} from "../../../../utils/bertAlertVisuals";
 import "./learning.html";
 
 /*

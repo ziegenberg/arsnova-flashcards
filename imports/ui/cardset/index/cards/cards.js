@@ -2,11 +2,11 @@
 import {Session} from "meteor/session";
 import {Template} from "meteor/templating";
 import {Cards} from "../../../../api/subscriptions/cards";
-import {CardVisuals} from "../../../../api/cardVisuals";
-import {CardType} from "../../../../api/cardTypes";
+import {CardVisuals} from "../../../../utils/cardVisuals";
+import {CardType} from "../../../../utils/cardTypes";
 import {Cardsets} from "../../../../api/subscriptions/cardsets";
-import {Route} from "../../../../api/route";
-import {CardNavigation} from "../../../../api/cardNavigation";
+import {Route} from "../../../../utils/route";
+import {CardNavigation} from "../../../../utils/cardNavigation";
 import "./cards.html";
 
 /*

@@ -1,6 +1,6 @@
 import "./calculate.html";
-import {BonusForm} from "../../../../../../../api/bonusForm";
-import {LeitnerProgress} from "../../../../../../../api/leitnerProgress";
+import {BonusForm} from "../../../../../../../utils/bonusForm";
+import {LeitnerProgress} from "../../../../../../../utils/leitnerProgress";
 
 /*
  * ############################################################################

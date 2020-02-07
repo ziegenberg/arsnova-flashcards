@@ -3,7 +3,7 @@ import {Meteor} from "meteor/meteor";
 import {Template} from "meteor/templating";
 import {Cardsets} from "../../../../../api/subscriptions/cardsets";
 import {Ratings} from "../../../../../api/subscriptions/ratings";
-import {UserPermissions} from "../../../../../api/permissions";
+import {UserPermissions} from "../../../../../utils/userPermissions";
 import "./ratings.html";
 
 /*

@@ -2,9 +2,9 @@ import {Meteor} from "meteor/meteor";
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import "./cardsetForm.html";
-import {CardType} from '../../api/cardTypes.js';
-import {Route} from '../../api/route.js';
-import {BertAlertVisuals} from "../../api/bertAlertVisuals";
+import {CardType} from '../../utils/cardTypes.js';
+import {Route} from '../../utils/route.js';
+import {BertAlertVisuals} from "../../utils/bertAlertVisuals";
 import {Cardsets} from "../../api/subscriptions/cardsets";
 import * as config from "../../config/cardset";
 

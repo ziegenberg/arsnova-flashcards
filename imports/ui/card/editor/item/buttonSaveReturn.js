@@ -1,4 +1,4 @@
-import {CardEditor} from "../../../../api/cardEditor.js";
+import {CardEditor} from "../../../../utils/cardEditor.js";
 import "./buttonSaveReturn.html";
 
 /*

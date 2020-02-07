@@ -1,7 +1,7 @@
 import {Session} from "meteor/session";
-import {Profile} from "../../../../api/profile";
-import {SweetAlertMessages} from "../../../../api/sweetAlert";
-import {BertAlertVisuals} from "../../../../api/bertAlertVisuals";
+import {Profile} from "../../../../utils/profile";
+import {SweetAlertMessages} from "../../../../utils/sweetAlertMessages";
+import {BertAlertVisuals} from "../../../../utils/bertAlertVisuals";
 import {Meteor} from "meteor/meteor";
 import {Template} from "meteor/templating";
 import "./importCardsetButton.html";

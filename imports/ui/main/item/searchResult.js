@@ -1,8 +1,8 @@
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import "./searchResult.html";
-import {MainNavigation} from "../../../api/mainNavigation";
-import {Route} from "../../../api/route.js";
+import {MainNavigation} from "../../../utils/mainNavigation";
+import {Route} from "../../../utils/route.js";
 
 /*
 * ############################################################################

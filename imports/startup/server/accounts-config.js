@@ -1,5 +1,5 @@
 import {Accounts} from 'meteor/accounts-base';
-import {ServerStyle} from "../../api/styles";
+import {ServerStyle} from "../../utils/serverStyle";
 import {Meteor} from "meteor/meteor";
 
 ServiceConfiguration.configurations.remove({

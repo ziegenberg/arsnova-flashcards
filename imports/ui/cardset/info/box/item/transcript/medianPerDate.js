@@ -1,6 +1,6 @@
 //------------------------ IMPORTS
 import {Template} from "meteor/templating";
-import {TranscriptBonusList} from "../../../../../../api/transcriptBonus";
+import {TranscriptBonusList} from "../../../../../../utils/transcriptBonus";
 import "./medianPerDate.html";
 
 /*

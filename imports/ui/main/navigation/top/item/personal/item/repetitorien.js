@@ -1,6 +1,6 @@
 import "./repetitorien.html";
 import {Template} from "meteor/templating";
-import {NavigatorCheck} from "../../../../../../../api/navigatorCheck";
+import {NavigatorCheck} from "../../../../../../../utils/navigatorCheck";
 import {Meteor} from "meteor/meteor";
 
 /*

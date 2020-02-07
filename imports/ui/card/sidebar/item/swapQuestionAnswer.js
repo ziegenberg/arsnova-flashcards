@@ -1,9 +1,9 @@
 import {Template} from "meteor/templating";
-import {CardType} from "../../../../api/cardTypes";
+import {CardType} from "../../../../utils/cardTypes";
 import {Cardsets} from "../../../../api/subscriptions/cardsets";
-import {Route} from "../../../../api/route";
+import {Route} from "../../../../utils/route";
 import {Session} from "meteor/session";
-import {CardNavigation} from "../../../../api/cardNavigation";
+import {CardNavigation} from "../../../../utils/cardNavigation";
 import "./swapQuestionAnswer.html";
 
 Session.setDefault('swapAnswerQuestion', 0);

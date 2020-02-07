@@ -1,9 +1,9 @@
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
-import {Route} from "../../../api/route";
-import {CardType} from "../../../api/cardTypes";
+import {Route} from "../../../utils/route";
+import {CardType} from "../../../utils/cardTypes";
 import {Cardsets} from "../../../api/subscriptions/cardsets";
-import {CardNavigation} from "../../../api/cardNavigation";
+import {CardNavigation} from "../../../utils/cardNavigation";
 import "./settings.html";
 
 /*

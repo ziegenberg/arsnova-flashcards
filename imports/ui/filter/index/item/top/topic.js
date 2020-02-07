@@ -1,7 +1,7 @@
 import "./topic.html";
-import {Route} from "../../../../../api/route";
+import {Route} from "../../../../../utils/route";
 import {TranscriptBonus} from "../../../../../api/subscriptions/transcriptBonus";
-import {TranscriptBonusList} from "../../../../../api/transcriptBonus";
+import {TranscriptBonusList} from "../../../../../utils/transcriptBonus";
 import {Cardsets} from "../../../../../api/subscriptions/cardsets";
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";

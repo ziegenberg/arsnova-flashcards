@@ -1,6 +1,6 @@
 import {Mongo} from "meteor/mongo";
 import {Meteor} from "meteor/meteor";
-import {UserPermissions} from "../permissions";
+import {UserPermissions} from "../../utils/userPermissions";
 import {SimpleSchema} from "meteor/aldeed:simple-schema";
 
 export const Notifications = new Mongo.Collection("notifications");

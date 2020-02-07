@@ -1,5 +1,5 @@
 import {Session} from "meteor/session";
-import {BonusForm} from "../../../../../api/bonusForm";
+import {BonusForm} from "../../../../../utils/bonusForm";
 import "./bonusForm.html";
 import "./item/daysBeforeReset.js";
 import "./item/endDate.js";
@@ -13,7 +13,7 @@ import "./item/startDate.js";
 import "./completeProfile/completeProfile.js";
 import "./join/join.js";
 import "./leave/leave.js";
-import {PomodoroTimer} from "../../../../../api/pomodoroTimer";
+import {PomodoroTimer} from "../../../../../utils/pomodoroTimer";
 
 /*
 * ############################################################################

@@ -1,8 +1,8 @@
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import {Meteor} from "meteor/meteor";
-import {Filter} from "../../../../api/filter";
-import {MainNavigation} from "../../../../api/mainNavigation";
+import {Filter} from "../../../../utils/filter";
+import {MainNavigation} from "../../../../utils/mainNavigation";
 import "./item/all/all.js";
 import "./item/backend.js";
 import "./item/connectionStatus.js";

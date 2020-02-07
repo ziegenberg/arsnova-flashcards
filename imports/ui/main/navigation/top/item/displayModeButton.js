@@ -1,8 +1,8 @@
 import "./displayModeButton.html";
 import {Session} from "meteor/session";
-import {Filter} from "../../../../../api/filter";
-import {Route} from "../../../../../api/route";
-import {WordcloudCanvas} from "../../../../../api/wordcloudCanvas";
+import {Filter} from "../../../../../utils/filter";
+import {Route} from "../../../../../utils/route";
+import {WordcloudCanvas} from "../../../../../utils/wordcloudCanvas";
 import ResizeSensor from "../../../../../../client/thirdParty/resizeSensor/ResizeSensor";
 Session.setDefault('filterDisplayWordcloud', false);
 

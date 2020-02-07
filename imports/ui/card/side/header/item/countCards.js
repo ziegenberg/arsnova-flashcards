@@ -1,7 +1,7 @@
 import "./countCards.html";
-import {Route} from "../../../../../api/route";
+import {Route} from "../../../../../utils/route";
 import {Cards} from "../../../../../api/subscriptions/cards";
-import {CardIndex} from "../../../../../api/cardIndex";
+import {CardIndex} from "../../../../../utils/cardIndex";
 import {Cardsets} from "../../../../../api/subscriptions/cardsets";
 
 /*

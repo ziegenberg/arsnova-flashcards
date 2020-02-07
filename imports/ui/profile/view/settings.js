@@ -4,9 +4,9 @@ import {Meteor} from "meteor/meteor";
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
 import {ColorThemes} from "../../../api/subscriptions/colorThemes";
-import {BertAlertVisuals} from "../../../api/bertAlertVisuals";
+import {BertAlertVisuals} from "../../../utils/bertAlertVisuals";
 import "./settings.html";
-import {ServerSettings} from "../../../api/settings";
+import {ServerSettings} from "../../../utils/serverSettings";
 
 /*
  * ############################################################################

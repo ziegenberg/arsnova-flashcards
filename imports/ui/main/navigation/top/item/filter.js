@@ -1,4 +1,4 @@
-import {FilterNavigation} from "../../../../../api/filterNavigation";
+import {FilterNavigation} from "../../../../../utils/filterNavigation";
 import {Template} from "meteor/templating";
 import "./filter.html";
 

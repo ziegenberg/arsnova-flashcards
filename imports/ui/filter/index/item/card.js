@@ -2,9 +2,9 @@
 
 import {Template} from "meteor/templating";
 import {Session} from "meteor/session";
-import {Route} from "../../../../api/route";
+import {Route} from "../../../../utils/route";
 import {TranscriptBonus} from "../../../../api/subscriptions/transcriptBonus";
-import {TranscriptBonusList} from "../../../../api/transcriptBonus";
+import {TranscriptBonusList} from "../../../../utils/transcriptBonus";
 import "../../../cardset/cardset.js";
 import "./card.html";
 

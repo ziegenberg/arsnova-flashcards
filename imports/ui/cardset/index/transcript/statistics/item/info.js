@@ -9,9 +9,9 @@ import "./box/pending.js";
 import "./box/submissions.js";
 import "./box/starsMedian.js";
 import "./box/starsTotal.js";
-import {FilterNavigation} from "../../../../../../api/filterNavigation";
-import {Filter} from "../../../../../../api/filter";
-import {Route} from "../../../../../../api/route";
+import {FilterNavigation} from "../../../../../../utils/filterNavigation";
+import {Filter} from "../../../../../../utils/filter";
+import {Route} from "../../../../../../utils/route";
 import {Session} from "meteor/session";
 
 /*

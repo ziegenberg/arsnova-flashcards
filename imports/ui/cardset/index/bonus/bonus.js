@@ -5,7 +5,7 @@ import {Template} from "meteor/templating";
 import {Cardsets} from "../../../../api/subscriptions/cardsets";
 import "./modal/removeUser.js";
 import "./bonus.html";
-import {Bonus} from "../../../../api/bonus";
+import {Bonus} from "../../../../utils/bonus";
 
 /*
 * ############################################################################

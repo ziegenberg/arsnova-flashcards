@@ -1,10 +1,10 @@
 import "./cardTypesList.html";
 import {Template} from "meteor/templating";
-import {CardType} from "../../api/cardTypes";
+import {CardType} from "../../utils/cardTypes";
 import {Cardsets} from "../../api/subscriptions/cardsets";
-import {Filter} from "../../api/filter";
+import {Filter} from "../../utils/filter";
 import {Session} from "meteor/session";
-import {UserPermissions} from "../../api/permissions";
+import {UserPermissions} from "../../utils/userPermissions";
 
 /*
  * ############################################################################

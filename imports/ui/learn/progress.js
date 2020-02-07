@@ -3,13 +3,13 @@ import {Leitner} from "../../api/subscriptions/leitner.js";
 import {Template} from "meteor/templating";
 import {Meteor} from "meteor/meteor";
 import {Session} from "meteor/session";
-import {getAuthorName} from "../../api/userdata";
+import {Profile} from "../../utils/profile";
 import ResizeSensor from "../../../client/thirdParty/resizeSensor/ResizeSensor";
-import {LeitnerProgress} from "../../api/leitnerProgress";
+import {LeitnerProgress} from "../../utils/leitnerProgress";
 import {Cardsets} from "../../api/subscriptions/cardsets";
-import {CardType} from "../../api/cardTypes";
-import {Route} from "../../api/route";
-import {UserPermissions} from "../../api/permissions";
+import {CardType} from "../../utils/cardTypes";
+import {Route} from "../../utils/route";
+import {UserPermissions} from "../../utils/userPermissions";
 
 /*
  * ############################################################################
@@ -38,7 +38,7 @@ Template.graph.helpers({
 			if (Meteor.userId() === Router.current().params.user_id) {
 				return TAPi18n.__('admin.myProgress') + title;
 			} else {
-				return title + ' | ' + TAPi18n.__('admin.userProgress') + ' »' + getAuthorName(Router.current().params.user_id) + '«';
+				return title + ' | ' + TAPi18n.__('admin.userProgress') + ' »' + Profile.getAuthorName(Router.current().params.user_id) + '«';
 			}
 		} else {
 			return TAPi18n.__('admin.allLearnedCardsets');

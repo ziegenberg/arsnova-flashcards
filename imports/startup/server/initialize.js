@@ -9,12 +9,12 @@ import {Wozniak} from "../../api/subscriptions/wozniak";
 import {AdminSettings} from "../../api/subscriptions/adminSettings";
 import {CronScheduler} from "../../../server/cronjob.js";
 import {Ratings} from "../../api/subscriptions/ratings";
-import {CardType} from "../../api/cardTypes";
+import {CardType} from "../../utils/cardTypes";
 import {WebPushSubscriptions} from "../../api/subscriptions/webPushNotifications";
 import {Paid} from "../../api/subscriptions/paid";
 import {TranscriptBonus} from "../../api/subscriptions/transcriptBonus";
-import {LeitnerUtilities} from "../../api/leitner";
-import {Utilities} from "../../api/utilities";
+import {LeitnerUtilities} from "../../utils/leitner";
+import {MiscUtilities} from "../../utils/misc";
 import * as bonusFormConfig from "../../config/bonusForm.js";
 
 var initColorThemes = function () {
@@ -949,7 +949,7 @@ Meteor.startup(function () {
 	for (let i = 0; i < cardsets.length; i++) {
 		let gotWorkload = false;
 		if (cardsets[i].shuffled) {
-			if (Utilities.checkIfRepGotWorkloadCardset(cardsets[i])) {
+			if (MiscUtilities.checkIfRepGotWorkloadCardset(cardsets[i])) {
 				gotWorkload = true;
 			}
 		} else {

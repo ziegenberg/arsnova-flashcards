@@ -5,33 +5,32 @@ import {CollegesCourses} from "../../api/subscriptions/collegesCourses.js";
 import {Workload} from "../../api/subscriptions/workload";
 import {Session} from "meteor/session";
 import {MeteorMathJax} from 'meteor/mrt:mathjax';
-import {CardType} from "../../api/cardTypes";
+import {CardType} from "../../utils/cardTypes";
 import DOMPurify from 'dompurify';
 import {DOMPurifyConfig} from "../../config/dompurify.js";
-import {getAuthorName, getOriginalAuthorName} from "../../api/userdata";
-import {Route} from "../../api/route";
-import {UserPermissions} from "../../api/permissions";
-import {Bonus} from "../../api/bonus";
-import {Profile} from "../../api/profile";
-import {BonusForm} from "../../api/bonusForm";
-import {MarkdeepContent} from "../../api/markdeep";
-import {NavigatorCheck} from "../../api/navigatorCheck";
+import {Route} from "../../utils/route";
+import {UserPermissions} from "../../utils/userPermissions";
+import {Bonus} from "../../utils/bonus";
+import {Profile} from "../../utils/profile";
+import {BonusForm} from "../../utils/bonusForm";
+import {MarkdeepContent} from "../../utils/markdeepContent";
+import {NavigatorCheck} from "../../utils/navigatorCheck";
 import {isNewCardset} from "../../ui/forms/cardsetForm";
-import {ServerStyle} from "../../api/styles.js";
-import {ServerInventoryTools} from "../../api/serverInventoryTools.js";
-import {CardVisuals} from "../../api/cardVisuals";
-import {AspectRatio} from "../../api/aspectRatio";
-import {CardNavigation} from "../../api/cardNavigation";
-import {Icons} from "../../api/icons";
-import {FilterNavigation} from "../../api/filterNavigation";
+import {ServerStyle} from "../../utils/serverStyle.js";
+import {ServerInventoryTools} from "../../utils/serverInventoryTools.js";
+import {CardVisuals} from "../../utils/cardVisuals";
+import {AspectRatio} from "../../utils/aspectRatio";
+import {CardNavigation} from "../../utils/cardNavigation";
+import {Icons} from "../../utils/icons";
+import {FilterNavigation} from "../../utils/filterNavigation";
 import  * as FilterConfig from "../../config/filter.js";
-import {MainNavigation} from "../../api/mainNavigation";
-import {BarfyStarsConfig} from "../../api/barfyStars.js";
-import {Utilities} from "../../api/utilities";
+import {MainNavigation} from "../../utils/mainNavigation";
+import {BarfyStarsConfig} from "../../utils/barfyStars.js";
+import {MiscUtilities} from "../../utils/misc";
 import {TranscriptBonus} from "../../api/subscriptions/transcriptBonus";
-import {TranscriptBonusList} from "../../api/transcriptBonus";
-import {ServerSettings} from "../../api/settings";
-import {CardsetVisuals} from "../../api/cardsetVisuals";
+import {TranscriptBonusList} from "../../utils/transcriptBonus";
+import {ServerSettings} from "../../utils/serverSettings";
+import {CardsetVisuals} from "../../utils/cardsetVisuals";
 
 Meteor.subscribe("collegesCourses");
 
@@ -781,11 +780,11 @@ Template.registerHelper("getDate", function () {
 });
 
 Template.registerHelper("getMomentsDate", function (date, displayMinutes = false, displayMode = 0, transformToSpeech = true) {
-	return Utilities.getMomentsDate(date, displayMinutes, displayMode, transformToSpeech);
+	return MiscUtilities.getMomentsDate(date, displayMinutes, displayMode, transformToSpeech);
 });
 
 Template.registerHelper("getMomentsDateShort", function (date) {
-	return Utilities.getMomentsDateShort(date);
+	return MiscUtilities.getMomentsDateShort(date);
 });
 
 Template.registerHelper("getTranscriptLectureNameMaxLength", function () {
@@ -883,11 +882,11 @@ Template.registerHelper("getCollege", function (value) {
 });
 
 Template.registerHelper("getAuthorName", function (owner, lastNameFirst = true) {
-	return getAuthorName(owner, lastNameFirst);
+	return Profile.getAuthorName(owner, lastNameFirst);
 });
 
 Template.registerHelper("getOriginalAuthorName", function (originalAuthorName, lastNameFirst = true) {
-	return getOriginalAuthorName(originalAuthorName, lastNameFirst);
+	return Profile.getOriginalAuthorName(originalAuthorName, lastNameFirst);
 });
 
 Template.registerHelper("getAuthor", function (owner) {

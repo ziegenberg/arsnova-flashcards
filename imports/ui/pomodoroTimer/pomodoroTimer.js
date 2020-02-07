@@ -1,10 +1,10 @@
 //------------------------ IMPORTS
 import "./pomodoroTimer.html";
 import {Template} from "meteor/templating";
-import {PomodoroTimer} from "../../api/pomodoroTimer";
-import {Bonus} from "../../api/bonus";
-import {Route} from "../../api/route";
-import {CardVisuals} from "../../api/cardVisuals";
+import {PomodoroTimer} from "../../utils/pomodoroTimer";
+import {Bonus} from "../../utils/bonus";
+import {Route} from "../../utils/route";
+import {CardVisuals} from "../../utils/cardVisuals";
 import {Session} from "meteor/session";
 
 /*

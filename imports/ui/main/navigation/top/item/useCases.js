@@ -1,4 +1,4 @@
-import {MainNavigation} from "../../../../../api/mainNavigation";
+import {MainNavigation} from "../../../../../utils/mainNavigation";
 import {Template} from "meteor/templating";
 import "./useCases.html";
 

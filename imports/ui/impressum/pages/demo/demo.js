@@ -1,7 +1,7 @@
 import {Template} from "meteor/templating";
-import {Route} from "../../../../api/route";
+import {Route} from "../../../../utils/route";
 import {Session} from "meteor/session";
-import {AspectRatio} from "../../../../api/aspectRatio";
+import {AspectRatio} from "../../../../utils/aspectRatio";
 import * as config from "../../../../config/firstTimeVisit.js";
 import "./demo.html";
 

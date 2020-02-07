@@ -6,8 +6,8 @@ import {Session} from "meteor/session";
 import {Cardsets} from "../../../api/subscriptions/cardsets.js";
 import DOMPurify from 'dompurify';
 import {DOMPurifyConfig} from "../../../config/dompurify.js";
-import {getAuthorName} from "../../../api/userdata";
-import {Bonus} from "../../../api/bonus";
+import {Profile} from "../../../utils/profile";
+import {Bonus} from "../../../utils/bonus";
 import "./index.html";
 import "./user.js";
 
@@ -32,7 +32,7 @@ Template.admin_users.helpers({
 			if (user.email !== "" && user.email !== undefined && user._id !== Meteor.userId()) {
 				mail = user.email;
 			}
-			fields.push({"_id": user._id, username: DOMPurify.sanitize(getAuthorName(user._id, true, false, true),DOMPurifyConfig), "loginid": DOMPurify.sanitize(user.profile.name, DOMPurifyConfig), "dateString": dateString, "date": date, "notificationSystems": notificationSystems, "mail": mail});
+			fields.push({"_id": user._id, username: DOMPurify.sanitize(Profile.getAuthorName(user._id, true, false, true),DOMPurifyConfig), "loginid": DOMPurify.sanitize(user.profile.name, DOMPurifyConfig), "dateString": dateString, "date": date, "notificationSystems": notificationSystems, "mail": mail});
 		});
 
 		return fields;

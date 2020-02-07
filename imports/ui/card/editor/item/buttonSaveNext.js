@@ -1,5 +1,5 @@
-import {CardEditor} from "../../../../api/cardEditor.js";
-import {CardIndex} from "../../../../api/cardIndex";
+import {CardEditor} from "../../../../utils/cardEditor.js";
+import {CardIndex} from "../../../../utils/cardIndex";
 import {Session} from "meteor/session";
 import "./buttonSaveNext.html";
 

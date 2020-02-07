@@ -1,4 +1,4 @@
-import {Route} from "../../../../../api/route";
+import {Route} from "../../../../../utils/route";
 import "./backToHome.html";
 
 /*
