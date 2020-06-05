@@ -1558,6 +1558,28 @@ FlowRouter.route('/admin/settings', {
 	}
 });
 
+FlowRouter.route('/landingPage', {
+	name: 'landingPage',
+	whileWaiting: function () {
+		this.render(mainTemplate, loadingScreenTemplate);
+	},
+	waitOn: function () {
+		return [
+			import('../../ui/landingPage/landingPage.js')
+		];
+	},
+	data: function() {
+		document.title = TAPi18n.__('title.landingPage',  {app: ServerStyle.getAppTitle()}, ServerStyle.getServerLanguage());
+	},
+	action: function (params, qs, data) {
+		//if(firstVisit()){                                 @todo configure for first visit only
+		//      this.render(mainTemplate, 'main', data)
+		//} else {
+		this.render(mainTemplate, 'landingPage', data);
+		//}
+	}
+});
+
 /**
  * onBeforeAction
  */

@@ -1,6 +1,7 @@
 {
   "title": {
     "default": "__app__",
+    "landingPage": "__app__: Intro",
     "progress": "__app__: Lernstand »__name__«",
     "firstLogin": "__app__: Erstanmeldung",
     "accessDenied": "__app__: Kein Zugriff",
