@@ -17,6 +17,7 @@ import {Leitner} from "../../api/subscriptions/leitner";
 import {Wozniak} from "../../api/subscriptions/wozniak";
 
 let mainTemplate = 'main';
+let landingTemplate = 'landingPage';
 let adminMainTemplate = 'admin_main';
 let loadingScreenTemplate = 'loadingScreen';
 
@@ -1575,7 +1576,7 @@ FlowRouter.route('/landingPage', {
 		//if(firstVisit()){                                 @todo configure for first visit only
 		//      this.render(mainTemplate, 'main', data)
 		//} else {
-		this.render(mainTemplate, 'landingPage', data);
+		this.render('landingPage', data);
 		//}
 	}
 });
@@ -1598,6 +1599,8 @@ var linksWithNoLoginRequirement = function () {
 		'agb',
 		'datenschutz',
 		'making',
+		'landingPage',
+		'landingPageIntro',
 		'makinglist'
 	];
 	if (ServerStyle.isLoginEnabled("guest") && MainNavigation.isGuestLoginActive()) {

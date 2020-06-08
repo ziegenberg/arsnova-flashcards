@@ -1,1 +1,2 @@
-import {Session} from "meteor/session";
+import "./landingPage.html";
+import "./landingPageIntro/landingPageIntro.html";
