@@ -12,7 +12,8 @@ let defaultBackgrounds = {
 	"learning": "none",
 	"backend": "none",
 	"editor": "none",
-	"transcriptBonus": "none"
+	"transcriptBonus": "none",
+	"landingPage": "none"
 };
 
 // Setting "linux"
@@ -24,7 +25,8 @@ let linuxBackgrounds = {
 	"learning": "none",
 	"backend": "none",
 	"editor": "none",
-	"transcriptBonus": "none"
+	"transcriptBonus": "none",
+	"landingPage": "none"
 };
 
 module.exports = {

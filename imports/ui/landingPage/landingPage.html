@@ -1,3 +1,18 @@
 <template name="landingPage">
-    {{> landingPageIntro}}
+    <div style="width: 100%; height: {{navHeight}}">
+        {{> landingPageNav}}
+    </div>
+    <div style="width: 100%; height: {{maxUserHeightWithNav}}px">
+        {{> landingPageIntro}}
+    </div>
+    <div style="width: 100%; height: {{maxUserHeight}}px">
+        {{> landingPageFeatures}}
+    </div>
+    <div style="width: 100%; height: {{maxUserHeight}}px">
+        {{> landingPageIntegrates}}
+    </div>
+    <div style="width: 100%; height: {{maxUserHeight}}px">
+        {{> landingPageQuestions}}
+    </div>
+    {{> landingPageFooter}}
 </template>

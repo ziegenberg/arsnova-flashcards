@@ -242,6 +242,10 @@ export let Route = class Route {
 		return (this.isHome() || this.isPool() || this.isMyCardsets() || this.isRepetitorium() || this.isAllCardsets() || this.isWorkload() || this.isAllRepetitorien() || this.isPersonalRepetitorien() || this.isMyTranscripts() || this.isMyBonusTranscripts() || this.isShuffle() || this.isEditShuffle() || this.isTranscriptBonus());
 	}
 
+	static isLandingPage () {
+		return FlowRouter.getRouteName() === "landingPage";
+	}
+
 	static isFirstTimeVisit () {
 		if (Route.isMakingOf()) {
 			return false;
