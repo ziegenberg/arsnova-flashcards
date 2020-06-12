@@ -863,8 +863,10 @@
           "use_cases_special_cardsets_button_background_hover": $thm_green,
           "use_cases_special_cardsets_button_text_hover": white,
     //landingPage
-          "landing_page_nav_color": black,
-          "landing_page_nav_background": black,
+          "landing_page_nav_color": white,
+          "landing_page_nav_background": $primary_text,
+          "landing_page_nav_hover": $thm_gray,
+          "landing_page_nav_text_color": white,
           "landing_page_intro_background_color": $thm_gray,
           "landing_page_intro_color": black,
           "landing_page_feature_background": white,

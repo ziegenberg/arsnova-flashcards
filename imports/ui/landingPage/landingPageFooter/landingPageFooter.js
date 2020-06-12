@@ -1,0 +1,1 @@
+import "./landingPageFooter.html";

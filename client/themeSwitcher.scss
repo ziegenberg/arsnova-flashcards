@@ -825,6 +825,8 @@ $themes: (
     //landingPage
     $landing_page_nav_color: map-get($map, "landing_page_nav_color");
     $landing_page_nav_background: map-get($map, "landing_page_nav_background");
+    $landing_page_nav_text_color: map-get($map, "landing_page_nav_text_color");
+    $landing_page_nav_hover: map-get($map, "landing_page_nav_hover");
     $landing_page_intro_background_color: map-get($map, "landing_page_intro_background_color");
     $landing_page_intro_color: map-get($map, "landing_page_intro_color");
     $landing_page_feature_background: map-get($map, "landing_page_feature_background");
@@ -4144,6 +4146,9 @@ $themes: (
     #landing-page-nav {
       color: $landing_page_nav_color;
       background-color: $landing_page_nav_background;
+    }
+    .landing-page-nav-text {
+      color: $landing_page_nav_text_color;
     }
     #landing-page-intro {
       color: $landing_page_intro_color;

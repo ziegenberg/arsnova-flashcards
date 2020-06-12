@@ -12,16 +12,8 @@ Template.landingPage.onCreated(function () {
     setTheme();
 });
 
-let navHeight = "200px";
-
 Template.landingPage.helpers({
     maxUserHeight: function () {
         return window.innerHeight;
     },
-    maxUserHeightWithNav: function () {
-        return window.innerHeight - navHeight;
-    },
-    navHeight: function () {
-        return navHeight;
-    }
 });
