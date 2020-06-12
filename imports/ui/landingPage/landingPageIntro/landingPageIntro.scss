@@ -1,0 +1,69 @@
+#landing-page-intro {
+  background-image: url("/img/background/bg-pattern.png");
+  height: 100%;
+}
+
+#landing-page-intro-content {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+#landing-page-intro-picture-div {
+  @media only screen and (min-width: 768px) {
+    min-width: 200px;
+    width: 50%;
+    height: auto;
+    float: right;
+    padding: 10px;
+  }
+  padding: 10px;
+  display: grid;
+}
+
+#landing-page-intro-picture {
+  @media only screen and (min-width: 768px) {
+    margin: auto;
+    max-height: 600px;
+    max-width: 300px;
+  }
+  margin: auto;
+  max-height: 400px;
+  max-width: 200px;
+}
+
+#landing-page-intro-text-div {
+  @media only screen and (min-width: 768px) {
+    background-image: url("/img/background/flashcard.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 200px;
+    width: 50%;
+    height: auto;
+    float: left;
+    display: table;
+    padding: 10px;
+  }
+  display: block;
+}
+
+#landing-page-intro-text {
+  @media only screen and (min-width: 768px) {
+    height: 100%;
+    margin-top: 30%;
+    margin-bottom: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  display: grid;
+  text-align: center;
+}
+
+#button {
+  height: 50%;
+
+}

@@ -1576,7 +1576,7 @@ FlowRouter.route('/landingPage', {
 		//if(firstVisit()){                                 @todo configure for first visit only
 		//      this.render(mainTemplate, 'main', data)
 		//} else {
-		this.render('landingPage', data);
+		this.render( 'landingPage', data);
 		//}
 	}
 });
@@ -1599,9 +1599,8 @@ var linksWithNoLoginRequirement = function () {
 		'agb',
 		'datenschutz',
 		'making',
-		'landingPage',
-		'landingPageIntro',
-		'makinglist'
+		'makinglist',
+		'landingPage'
 	];
 	if (ServerStyle.isLoginEnabled("guest") && MainNavigation.isGuestLoginActive()) {
 		let linksGuest = [
@@ -1665,6 +1664,9 @@ export let setTheme = function () {
 	if (Route.isCardset()) {
 		themeId = 'theme-wrapper-cardset';
 	}
+	if (Route.isLandingPage()) {
+		themeId = 'theme-wrapper-landingPage'
+	}
 	html.attr('id', themeId);
 	html.attr('class', themeClass);
 
@@ -1698,6 +1700,9 @@ export let setTheme = function () {
 			body.addClass('internal');
 			body.css('background-image', ServerStyle.getBackground("internal"));
 		}
+	} else if (Route.isLandingPage()) {
+		body.addClass('landingPage');
+		body.css('background-image', ServerStyle.getBackground("landingPage"));
 	} else {
 		if (!Route.isImpressum()) {
 			body.addClass('landing-page');

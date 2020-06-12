@@ -1,2 +1,1 @@
-import "./landingPage.html";
-import "./landingPageIntro/landingPageIntro.html";
+import './landingPageIntro.html';

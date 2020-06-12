@@ -822,6 +822,22 @@ $themes: (
     $use_cases_special_cardsets_button_text: map-get($map, "use_cases_special_cardsets_button_text");
     $use_cases_special_cardsets_button_background_hover: map-get($map, "use_cases_special_cardsets_button_background_hover");
     $use_cases_special_cardsets_button_text_hover: map-get($map, "use_cases_special_cardsets_button_text_hover");
+    //landingPage
+    $landing_page_nav_color: map-get($map, "landing_page_nav_color");
+    $landing_page_nav_background: map-get($map, "landing_page_nav_background");
+    $landing_page_nav_text_color: map-get($map, "landing_page_nav_text_color");
+    $landing_page_nav_hover: map-get($map, "landing_page_nav_hover");
+    $landing_page_intro_background_color: map-get($map, "landing_page_intro_background_color");
+    $landing_page_intro_color: map-get($map, "landing_page_intro_color");
+    $landing_page_feature_background: map-get($map, "landing_page_feature_background");
+    $landing_page_feature_color: map-get($map, "landing_page_feature_color");
+    $landing_page_feature_box_background: map-get($map, "landing_page_feature_box_background");
+    $landing_page_integrates_background: map-get($map, "landing_page_integrates_background");
+    $landing_page_integrates_color: map-get($map, "landing_page_integrates_color");
+    $landing_page_questions_background: map-get($map, "landing_page_questions_background");
+    $landing_page_questions_color: map-get($map, "landing_page_questions_color");
+    $landing_page_footer_background: map-get($map, "landing_page_footer_background");
+    $landing_page_footer_color: map-get($map, "landing_page_footer_color");
 
     .navbar-toggle {
       background-color: $navbar_collapse_background !important;
@@ -4124,6 +4140,44 @@ $themes: (
     }
     .bonusTrophy {
       color: $trophy;
+    }
+
+    //landing page
+    #landing-page-nav {
+      color: $landing_page_nav_color;
+      background-color: $landing_page_nav_background;
+    }
+    .landing-page-nav-text {
+      color: $landing_page_nav_text_color;
+    }
+    #landing-page-intro {
+      color: $landing_page_intro_color;
+      background-color: $landing_page_intro_background_color;
+    }
+    #landing-page-feature {
+      background-color: $landing_page_feature_background;
+      color: $landing_page_feature_color;
+      .landing-page-feature-features {
+        background-color: $landing_page_feature_box_background;
+      }
+      #landing-page-feature-picture{
+      }
+    }
+    #landing-page-integrates {
+      background-color: $landing_page_integrates_background;
+      color: $landing_page_integrates_color;
+      #landing-page-integrates-picture-fragjetzt {
+      }
+      #landing-page-integrates-picture-arsnovaclick {
+      }
+    }
+    #landing-page-questions {
+      background-color: $landing_page_questions_background;
+      color: $landing_page_questions_color;
+    }
+    #landing-page-footer {
+      background-color: $landing_page_footer_background;
+      color: $landing_page_footer_color;
     }
   }
 }
