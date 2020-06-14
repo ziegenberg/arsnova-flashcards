@@ -1,55 +1,49 @@
 #landing-page-intro {
   background-image: url("/img/background/bg-pattern.png");
-  height: inherit;
+  height: 100%;
 }
 
 #landing-page-intro-content {
   width: 100%;
   height: 100%;
   padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #landing-page-intro-picture-div {
   @media only screen and (min-width: 768px) {
     background-image: url("./img/cardsMockups/cards.png");
     background-repeat: no-repeat;
-    background-size: 30%;
-    min-width: 200px;
-    width: 50%;
-    height: 100%;
-    float: right;
+    background-size: 50%;
+    width: 30%;
+    margin-left: 30%;
   }
   background-image: url("./img/cardsMockups/cards.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 50%;
-  height: 100%;
-  display: inline-block;
+  width: 100%;
+  height: 65%;
+  max-width: inherit;
+  display: inline-grid;
 }
 
-#landing-page-intro-picture {
-  @media only screen and (min-width: 768px) {
-  }
-
-}
 
 #landing-page-intro-text-div {
   @media only screen and (min-width: 768px) {
-    background-image: url("./img/background/flashcard.jpg");
     background-repeat: no-repeat;
-    background-size: 90%;
-    width: 50%;
-    height: 100%;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 50%;
+    float: left;
   }
   background-image: url("./img/background/flashcard.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 100%;
-  display: inline-block;
+  height: 50%;
+  display: inline-grid;
 }
 
 #landing-page-intro-text {
@@ -62,6 +56,11 @@
 
 }
 
+#landing-page-button-div {
+  width: 100%;
+  float: left;
+  margin-left: 22%;
+}
 
 //menu modal
 .navModal {
@@ -126,3 +125,4 @@
   text-decoration: none;
   cursor: pointer;
 }
+
