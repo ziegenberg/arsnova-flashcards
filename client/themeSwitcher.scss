@@ -4146,6 +4146,9 @@ $themes: (
     #landing-page-nav {
       color: $landing_page_nav_color;
       background-color: $landing_page_nav_background;
+      .icon {
+        color: white;
+      }
     }
     .landing-page-nav-text {
       color: $landing_page_nav_text_color;

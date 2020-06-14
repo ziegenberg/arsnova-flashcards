@@ -1,11 +1,15 @@
 <template name="landingPageNav">
     <div id="landing-page-nav">
-        <ul id="landing-page-nav-ul">
-            <li class="li-left"><a class="landing-page-nav-text">🍅cards</a></li>
-            <li class="li-right"><a class="landing-page-nav-text">Impressum</a></li>
-            <li class="li-right"><a class="landing-page-nav-text">Questions</a></li>
-            <li class="li-right"><a class="landing-page-nav-text">Integrations</a></li>
-            <li class="li-right"><a class="landing-page-nav-text">Features</a></li>
-        </ul>
+        <div id="landing-page-nav-ul" class="topnav">
+            <a class="landing-page-nav-text li-left">🍅cards</a>
+            <a id="navScrollImpressum" class="landing-page-nav-text li-right">Impressum</a>
+            <a id="navScrollQuestions" class="landing-page-nav-text li-right">Questions</a>
+            <a id="navScrollIntegrations" class="landing-page-nav-text li-right">Integrations</a>
+            <a id="navScrollFeatures" class="landing-page-nav-text li-right active">Features</a>
+            <a id="navScrollIntro" class="landing-page-nav-text li-right active">Intro</a>
+            <a href="javascript:void(0);" class="icon" id="navbar-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
 </template>
