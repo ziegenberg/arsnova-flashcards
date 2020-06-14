@@ -1,6 +1,7 @@
 #landing-page-intro {
   background-image: url("/img/background/bg-pattern.png");
   height: 100%;
+  width: 100%;
 }
 
 #landing-page-intro-content {
@@ -65,7 +66,7 @@
 //menu modal
 .navModal {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   left: 0;
   top: 0;

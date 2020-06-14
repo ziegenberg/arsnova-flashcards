@@ -1,6 +1,6 @@
 #landing-page-nav {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
 }
 
@@ -10,10 +10,8 @@
 
 #landing-page-nav-ul {
   overflow: hidden;
-
 }
 .topnav a {
-  min-width: 110px;
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -46,7 +44,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: absolute;}
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
