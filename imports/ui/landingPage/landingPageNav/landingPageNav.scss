@@ -1,6 +1,7 @@
 #landing-page-nav {
   position: fixed;
   top: 0;
+  width: 100%;
 }
 
 .landing-page-content {
@@ -23,6 +24,8 @@
 
 .li-left {
   float: left;
+  pointer-events: none;
+  user-select: none;
 }
 .li-right {
   border-left: 1px solid white;

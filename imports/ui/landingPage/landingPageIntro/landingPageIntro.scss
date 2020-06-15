@@ -10,55 +10,99 @@
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
 }
 
-#landing-page-intro-picture-div {
-  @media only screen and (min-width: 768px) {
-    background-image: url("./img/cardsMockups/cards.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    width: 30%;
-    margin-left: 30%;
-  }
-  background-image: url("./img/cardsMockups/cards.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+.landing-page-intro-left {
+  height: 100%;
+  width: 49.9%;
+  float: left;
+  min-width: 260px;
+}
+.landing-page-intro-right {
+  height: inherit;
+  width: 49.9%;
+  float: right;
+  min-width: 260px;
+}
+
+.landing-page-intro-div-border {
+  padding: 20px 20px 20px 20px;
+  height: 100%;
   width: 100%;
-  height: 65%;
-  max-width: inherit;
-  display: inline-grid;
 }
-
 
 #landing-page-intro-text-div {
-  @media only screen and (min-width: 768px) {
-    background-repeat: no-repeat;
-    width: 30%;
-    margin-left: 10%;
-    margin-top: 5%;
-    height: 50%;
-    float: left;
-  }
-  background-image: url("./img/background/flashcard.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  height: 80%;
   width: 100%;
-  height: 50%;
-  display: inline-grid;
-}
-
-#landing-page-intro-text {
-  @media only screen and (min-width: 768px) {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  a  {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+    height: auto;
+    font-weight: 200;
+    letter-spacing: 1px;
+    display: flex;
+    text-decoration: none;
   }
-}
-
-#button {
-  height: 20%;
-
 }
 
 #landing-page-button-div {
+  height: 20%;
   width: 100%;
-  float: left;
+  align-content: center;
+}
+.button {
+  transition-duration: 0.4s;
+  display: inline-block;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover {
+  background-color: gray;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
+#landing-page-intro-picture-div {
+  height: 100%;
+  width: 100%;
+  background-image: url("./img/cardsMockups/cards.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+@media screen and (max-width: 600px) {
+  .landing-page-intro-left {
+    height: 100%;
+    width: 100%;
+    float: top;
+  }
+  .landing-page-intro-right {
+    display: none;
+  }
+  #landing-page-button-div {
+    height: auto;
+    .button{
+      float: top;
+    }
+  }
+  #landing-page-text-div {
+    height: auto;
+  }
+}
