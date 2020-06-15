@@ -8,7 +8,7 @@ Template.landingPageNav.events({
 	"click #navScrollImpressum": function (event) {
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: $("#landing-page-footer").offset().top
+            scrollTop: -51 + $("#landing-page-footer").offset().top
         }, 600);
 		let modal = document.getElementById("NavPopupModal");
 		modal.style.display = "none";
@@ -16,7 +16,7 @@ Template.landingPageNav.events({
 	"click #navScrollQuestions": function (event) {
 	    event.preventDefault();
 	    $('html, body').animate({
-            scrollTop: $("#landing-page-questions").offset().top
+            scrollTop: -51 +$("#landing-page-questions").offset().top
         }, 600);
 		let modal = document.getElementById("NavPopupModal");
 		modal.style.display = "none";
@@ -24,7 +24,7 @@ Template.landingPageNav.events({
 	"click #navScrollFeatures": function (event) {
 	    event.preventDefault();
 	    $('html, body').animate({
-            scrollTop: $("#landing-page-feature").offset().top
+            scrollTop: -51 + $("#landing-page-feature").offset().top
         }, 600);
 		let modal = document.getElementById("NavPopupModal");
 		modal.style.display = "none";
@@ -32,7 +32,7 @@ Template.landingPageNav.events({
 	"click #navScrollIntegrations": function (event) {
 		event.preventDefault();
 		$('html, body').animate({
-			scrollTop: $("#landing-page-integrates").offset().top
+			scrollTop: -51 + $("#landing-page-integrates").offset().top
 		}, 600);
 		let modal = document.getElementById("NavPopupModal");
 		modal.style.display = "none";
