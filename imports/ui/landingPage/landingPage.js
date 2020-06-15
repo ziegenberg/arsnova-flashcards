@@ -1,5 +1,6 @@
 import './landingPage.html';
 import './landingPageNav/landingPageNav.js';
+import './landingPageNav/landingPageNavModal/landingPageNavModal.js';
 import './landingPageIntro/landingPageIntro.js';
 import './landingPageFeatures/landingPageFeatures.js';
 import './landingPageIntegrates/landingPageIntegrates.js';
@@ -14,6 +15,6 @@ Template.landingPage.onCreated(function () {
 
 Template.landingPage.helpers({
     maxUserHeight: function () {
-        return window.innerHeight;
+        return window.innerHeight - 51;
     },
 });
