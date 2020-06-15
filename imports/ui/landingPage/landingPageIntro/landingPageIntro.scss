@@ -47,6 +47,9 @@
     letter-spacing: 1px;
     display: flex;
     text-decoration: none;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
   }
 }
 
@@ -66,9 +69,7 @@
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.button:hover {
-  background-color: gray;
-}
+
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -76,7 +77,6 @@
   transition: 0.5s;
   text-decoration: none;
 }
-
 #landing-page-intro-picture-div {
   height: 100%;
   width: 100%;
@@ -104,5 +104,21 @@
   }
   #landing-page-text-div {
     height: auto;
+  }
+  #landing-page-intro-text-div {
+    a {
+      height: 100%;
+      font-size: 20px;
+      line-height: 25px;
+      display: inline-block;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #landing-page-intro-text-div {
+    a {
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 }
