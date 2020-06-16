@@ -1,4 +1,34 @@
 #landing-page-footer{
-  height: 200px;
   width: 100%;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.landing-page-footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  a {
+    color: lightgray;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.landing-page-footer-list {
+  list-style: none;
+}
+
+.landing-page-footer-element {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.noSelect {
+  text-decoration: none !important;
+  user-select: none;
+  pointer-events: none;
 }
