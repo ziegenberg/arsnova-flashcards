@@ -1,6 +1,7 @@
 #landing-page-integrates {
   height: 100%;
   width: 100%;
+  background-image: linear-gradient(to bottom right, #6f74dd, #03dac6);
 }
 
 #landing-page-integrates-content-div {
@@ -24,17 +25,16 @@
 }
 
 #landing-page-integrates-fragjetzt-text a {
-  color: #03dac6;
+  color: #ff9800;
+  width: 60%;
   text-decoration: none;
-  padding-bottom: 10px;
   height: 50%;
-  font-weight: 200;
-  letter-spacing: 1px;
-  display: flex;
+  float: left;
+  padding-bottom: 20px;
   font-size: 20px;
   line-height: 25px;
-  text-align: left;
-  width: 100%;
+  font-weight: 200;
+  letter-spacing: 1px;
 
   h1 {
     width: 100%;
@@ -75,12 +75,12 @@
 }
 
 #landing-page-integrates-arsnovaclick-text a {
-  color: #ff9800 !important;
+  color: #37474f;
   width: 60%;
   text-decoration: none;
-  height: 50%;
+  height: 60%;
   float: right;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 20px;
   line-height: 25px;
   font-weight: 200;
