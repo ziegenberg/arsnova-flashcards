@@ -9,28 +9,28 @@
   padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
+  padding-right: 30px;
 }
 
 #landing-page-feature-picture {
   height: 100%;
-  width: 50%;
-  display: inline-flex;
+  width: 100%;
   background-image: url("./img/cardsMockups/cards.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .landing-page-feature-right {
-  height: inherit;
+  height: 100%;
   float: right;
-  min-width: 260px;
+  width: 70%;
 }
 
 .landing-page-feature-left {
-  height: inherit;
-  width: 49.9%;
+  height: 100%;
   float: left;
-  min-width: 260px;
+  width: 30%;
 }
 
 .landing-page-feature-div-border {
@@ -51,55 +51,66 @@
   height: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  .landing-page-feature-left {
+.landing-page-feature-cards-div {
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page-feature-card {
+  padding: 10px;
+  border: 1px black;
+  width: 45%;
+  height: 45%;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  h3 {
+    height: 20%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    i {
+      height: 100%;
+      width: 100%;
+      color: black;
+      text-align: center;
+    }
+  }
+  h2 {
+    text-align: center;
+    color: black;
+  }
+  p {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .landing-page-feature-right {
     height: 100%;
     width: 100%;
-    float: top;
   }
-  .landing-page-feature-right {
+  .landing-page-feature-left {
     display: none;
   }
 }
-
-
-/* Float four columns side by side */
-.column {
-  padding: 10px 10px 100px 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
+@media screen and (max-width: 425px) {
+  .landing-page-feature-card {
     width: 100%;
-    display: block;
-    margin-bottom: 20px;
+    height: 20%;
+    h3 {
+      display: none;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  text-align: center;
-  background-color: #f1f1f1;
-  i {
-    font-size: 100px;
-  }
 
-  img {
-    font-size: 100px;
-    height: 100px;
-    width: 100px;
-  }
-}
