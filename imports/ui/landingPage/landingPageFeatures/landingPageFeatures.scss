@@ -61,7 +61,7 @@
 }
 
 .landing-page-feature-card {
-  background-color: green;
+  background-color: #fafad2!important;
   padding: 10px;
   border: 1px black solid;
   width: 45%;
@@ -79,6 +79,7 @@
     i {
       height: 100%;
       width: 100%;
+      font-size: 80px;
       color: black;
       text-align: center;
     }
@@ -90,6 +91,11 @@
   p {
     color: black;
   }
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #ff8c00;
 }
 
 @media screen and (max-width: 700px) {

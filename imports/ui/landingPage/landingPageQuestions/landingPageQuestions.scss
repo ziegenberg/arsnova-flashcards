@@ -25,3 +25,19 @@
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+.button {
+  position: relative;
+  transition: 0.5s;
+  background-color: #bb86fc;
+  color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
