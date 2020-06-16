@@ -21,8 +21,8 @@
 }
 
 .landing-page-feature-right {
-  height: 100%;
-  width: 49.9%;
+  height: inherit;
+  float: right;
   min-width: 260px;
 }
 
@@ -37,36 +37,6 @@
   padding: 20px 20px 20px 20px;
   height: 100%;
   width: 100%;
-}
-
-#landing-page-feature-panels-div {
-  height: 100%;
-  width: 25%;
-  display: inline-flex;
-  text-align: center;
-
-  i {
-    color: black;
-    text-decoration: none;
-    font-size: 100px;
-    letter-spacing: 100px;
-    text-align: center;
-  }
-}
-
-#landing-page-feature-box-top {
-  padding-left: 50%;
-  text-align: center;
-  float: right;
-  display: block;
-}
-
-#landing-page-feature-box-bottom {
-  padding-left: 50%;
-  text-align: center;
-  float: right;
-  display: block;
-
 }
 
 #landing-page-description {
@@ -89,5 +59,47 @@
   }
   .landing-page-feature-right {
     display: none;
+  }
+}
+
+
+/* Float four columns side by side */
+.column {
+  padding: 10px 10px 100px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  i {
+    font-size: 100px;
+  }
+
+  img {
+    font-size: 100px;
+    height: 100px;
+    width: 100px;
   }
 }
