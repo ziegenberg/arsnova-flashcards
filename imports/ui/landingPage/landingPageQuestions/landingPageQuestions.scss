@@ -1,11 +1,13 @@
 #landing-page-questions {
   height: 100%;
   width: 100%;
-  position: relative;
+  overflow-y: scroll;
+}
+
+.landing-page-questions-content-div{
 }
 
 .question-container {
-  padding-top: 2%;
 }
 
 .a {
