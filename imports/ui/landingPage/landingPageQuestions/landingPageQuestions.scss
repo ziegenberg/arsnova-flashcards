@@ -1,6 +1,17 @@
 #landing-page-questions {
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+.question-container {
+  padding-top: 2%;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+  text-underline: none;
 }
 
 #landing-page-questions-content-div {
@@ -8,48 +19,30 @@
   height: 100%;
   padding: 30px;
 }
-
-.collapsible {
-  position: relative;
-  transition: 0.5s;
-  background-color: #4a5c66;
-  color: white;
-  width: 100%;
-  text-align: left;
-  padding: 30px;
+.question-panel-title {
   text-decoration: none;
-  transition-duration: 0.4s;
-  display: inline-block;
   border: none;
-  cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
   a {
     text-decoration: none;
-    color: white;
+    color: black;
+  }
+  h4 {
+    text-decoration: none;
+    color: black;
+  }
+}
+.question-panel-heading {
+  text-decoration: none;
+  border: none;
+  background-color: #4a5c66;
+  a {
+    text-decoration: none;
   }
 }
 
-.active, .collapsible:hover {
-  background-color: #4a5c66;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+.question-panel-group .question-panel {
+  margin-bottom: 1%;
+  border-radius: 4px;
 }
 
