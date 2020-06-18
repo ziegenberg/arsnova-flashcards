@@ -1,54 +1,56 @@
 import './landingPageNav.html';
 
+export let animationTime = 600; //scroll animation time
+
+export function toggleClass(withTimeout) {
+	let containers = document.getElementsByClassName("template-containers");
+	if (withTimeout) {
+		setTimeout(function () {
+			toggleClass();
+		},animationTime+10);	//gives animation time before classes are added back
+	} else {
+		for (let i = 0; i < containers.length; i++) {
+			containers[i].classList.toggle("landing-page-scroll-snap");
+		}
+	}
+}
+
+export function animateScroll(id){
+	$('html, body').animate({
+		scrollTop: $(id).offset().top - 51
+	}, animationTime);
+}
+
+function scrollTo(event, id) {
+	event.preventDefault();
+	toggleClass(false);
+	animateScroll(id);
+	toggleClass(true);
+}
+
 Template.landingPageNav.events({
 	"click #navbar-icon": function () {
 	    let modal = document.getElementById("NavPopupModal");
 	    modal.style.display = "block";
 	},
 	"click #navScrollImpressum": function (event) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: -51 + $("#landing-page-footer").offset().top
-        }, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+		scrollTo(event, "#landing-page-footer");
     },
 	"click #navScrollQuestions": function (event) {
-	    event.preventDefault();
-	    $('html, body').animate({
-            scrollTop: -51 +$("#landing-page-questions").offset().top
-        }, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+	    scrollTo(event, "#landing-page-questions");
 	},
 	"click #navScrollFeatures": function (event) {
-	    event.preventDefault();
-	    $('html, body').animate({
-            scrollTop: -51 + $("#landing-page-feature").offset().top
-        }, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+	    scrollTo(event, "#landing-page-feature");
 	},
 	"click #navScrollIntegrations": function (event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: -51 + $("#landing-page-integrates").offset().top
-		}, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+		scrollTo(event, "#landing-page-integrates");
 	},
 	"click #navScrollIntro": function (event) {
 		event.preventDefault();
+		toggleClass(false);
 		$('html, body').animate({
 			scrollTop: 0
-		}, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
-	}
-});
-
-Template.landingPageNav.helpers({
-	maxScreenWidth: function () {
-		return window.innerWidth;
+		}, animationTime);
+		toggleClass(true);
 	}
 });

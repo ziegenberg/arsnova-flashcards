@@ -1,4 +1,18 @@
 import './landingPageNavModal.html';
+import {toggleClass, animateScroll} from "../landingPageNav";
+
+function hideModal() {
+	let modal = document.getElementById("NavPopupModal");
+	modal.style.display = "none";
+}
+
+function scrollTo(event, id) {
+	event.preventDefault();
+	toggleClass(false);
+	hideModal();
+	animateScroll(id);
+	toggleClass(true);
+}
 
 Template.landingPageNavModal.events({
 	"click .close": function () {
@@ -6,44 +20,25 @@ Template.landingPageNavModal.events({
 		modal.style.display = "none";
 	},
 	"click #scrollImpressum": function (event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: $("#landing-page-footer").offset().top
-		}, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+		scrollTo(event, "#landing-page-footer");
 	},
 	"click #scrollQuestions": function (event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: $("#landing-page-questions").offset().top
-		}, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+		scrollTo(event, "#landing-page-questions");
 	},
 	"click #scrollFeatures": function (event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: $("#landing-page-feature").offset().top + 51
-		}, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+		scrollTo(event, "#landing-page-feature");
 	},
 	"click #scrollIntegrations": function (event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: $("#landing-page-integrates").offset().top
-		}, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+		scrollTo(event, "#landing-page-integrates");
 	},
 	"click #scrollIntro": function (event) {
 		event.preventDefault();
+		toggleClass(false);
+		hideModal();
 		$('html, body').animate({
 			scrollTop: 0
 		}, 600);
-		let modal = document.getElementById("NavPopupModal");
-		modal.style.display = "none";
+		toggleClass(true);
 	},
 	"click": function (event) {
 		let modal = document.getElementById("NavPopupModal");
