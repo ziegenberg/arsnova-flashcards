@@ -1,14 +1,33 @@
 #landing-page-questions {
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
 }
 
-.landing-page-questions-content-div{
+/* Icon when the collapsible content is shown */
+.panel-title:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e114";
+  float: right;
+}
+/* Icon when the collapsible content is hidden */
+.panel-title.collapsed:after {
+  content: "\e080";
 }
 
-.question-container {
+.panel > .panel-heading, .panel.panel-default > .panel-heading {
+  background: linear-gradient(0deg,rgba(92,184,92,.3) 0,rgba(92,184,92,.3) 4px,#f0fff0 5px,#f0fff0)!important;
+  margin-top: 1%;
 }
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  background-color: #fafad2;
+  max-height: 45vh;
+  overflow-y: auto;}
+
+h3.panel-title, h4.panel-title {
+  color: black;
+}
+
 
 .a {
   text-decoration: none;
