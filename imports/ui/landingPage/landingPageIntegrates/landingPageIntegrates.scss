@@ -10,58 +10,84 @@
   padding: 30px;
 }
 
+.landing-page-integrates-title {
+  color: black;
+  height: 8%;
+  text-align: center;
+  margin: 0 !important;
+  text-decoration: underline;
+  h1 {
+    margin: 0 !important;
+  }
+}
+
 #landing-page-integrates-fragjetzt-div {
   width: 100%;
-  height: 50%;
+  height: 46%;
   float: top;
 }
 
-#landing-page-integrates-fragjetzt-text {
-  width: 60%;
+.landing-page-integrates-fj-left {
   height: 100%;
+  width: 60%;
   float: left;
-  padding: 20px;
-  color: #03dac6;
+}
+
+.landing-page-integrates-fj-right {
+  height: 100%;
+  width: 40%;
+  float: right;
+}
+
+#landing-page-integrates-fragjetzt-text {
+  width: 100%;
+  height: 80%;
+  float: top;
+  padding: 15px;
+  display: inline-block;
 }
 
 #landing-page-integrates-fragjetzt-text a {
-  color: #ff9800;
-  width: 60%;
+  width: 100%;
   text-decoration: none;
-  height: 50%;
-  float: left;
-  padding-bottom: 20px;
+  height: 90%;
+  padding-bottom: 15px;
   font-size: 20px;
   line-height: 25px;
   font-weight: 200;
   letter-spacing: 1px;
+  color: black;
 
   h1 {
+    margin: 0 !important;
+    color: #03dac6;
     width: 100%;
-    height: 40%;
+    height: 10%;
   }
 }
 
 .frag-jetzt-button {
-  position: relative;
-  transition: 0.5s;
-  background-color: #bb86fc;
-  color: black;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
   transition-duration: 0.4s;
+  padding: 10px;
   display: inline-block;
+  background-color: #bb86fc;
   border: none;
+  color: black;
+  text-align: center;
+  width: 100%;
   cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.frag-jetzt-button:hover {
+  background-color: #03dac6;
+  color: black;
+  cursor: pointer;
 }
 
 #landing-page-integrates-picture-fragjetzt {
   height: 100%;
-  width: 40%;
-  float: right;
+  width: 100%;
+  display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -70,62 +96,88 @@
 
 #landing-page-integrates-arsnovaclick-div {
   width: 100%;
-  height: 50%;
+  height: 46%;
   float: bottom;
+}
+
+.landing-page-integrates-ac-left {
+  height: 100%;
+  width: 40%;
+  float: left;
+}
+
+.landing-page-integrates-ac-right {
+  height: 100%;
+  width: 60%;
+  float: right;
+}
+
+#landing-page-integrates-arsnovaclick-text {
+  width: 100%;
+  height: 80%;
+  float: top;
+  padding: 15px;
+  display: inline-block;
 }
 
 #landing-page-integrates-arsnovaclick-text a {
   color: white;
-  width: 60%;
+  width: 100%;
   text-decoration: none;
-  height: 60%;
-  float: right;
-  padding-bottom: 30px;
+  height: 90%;
+  padding-bottom: 15px;
   font-size: 20px;
   line-height: 25px;
   font-weight: 200;
   letter-spacing: 1px;
 
   h1 {
+    margin:0 !important;
+    color: orange;
     width: 100%;
-    height: 40%;
+    height: 10%;
   }
 }
 
 #landing-page-integrates-picture-arsnovaclick {
   height: 100%;
-  width: 40%;
-  float: left;
+  width: 100%;
+  display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-image: url("./img/cardsMockups/arsnovaClick.png");
 }
 
-.landing-page-integrates-top {
-  float: top;
-  width: 100%;
-  height: 80%;
-}
-
-.landing-page-integrates-bottom {
-  float: bottom;
-  width: 100%;
-  height: 20%;
-}
-
 .click-button {
-  position: inherit;
-  transition: 0.5s;
-  background-color: #007bff;
-  color: white;
-  width: 60%;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
   transition-duration: 0.4s;
+  padding: 10px;
   display: inline-block;
+  background-color: #fd7e14;
   border: none;
+  color: white;
+  text-align: center;
+  width: 100%;
   cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.click-button:hover {
+  background-color: white;
+  color: orange;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-page-integrates-fj-right {
+    display: none;
+  }
+  .landing-page-integrates-fj-left {
+    width: 100%;
+  }
+  .landing-page-integrates-ac-right {
+    width: 100%;
+  }
+  .landing-page-integrates-ac-left {
+    display: none;
+  }
 }
