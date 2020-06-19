@@ -7,7 +7,7 @@
 #landing-page-integrates-content-div {
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 20px;
 }
 
 .landing-page-integrates-title {
@@ -18,6 +18,7 @@
   text-decoration: underline;
   h1 {
     margin: 0 !important;
+    font-size: 30px;
   }
 }
 
@@ -66,7 +67,7 @@
   }
 }
 
-.frag-jetzt-button {
+.frag-jetzt-button a{
   transition-duration: 0.4s;
   padding: 10px;
   display: inline-block;
@@ -78,10 +79,11 @@
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.frag-jetzt-button:hover {
+.frag-jetzt-button:hover a:hover{
   background-color: #03dac6;
   color: black;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #landing-page-integrates-picture-fragjetzt {
@@ -149,7 +151,7 @@
   background-image: url("./img/cardsMockups/arsnovaClick.png");
 }
 
-.click-button {
+.click-button a{
   transition-duration: 0.4s;
   padding: 10px;
   display: inline-block;
@@ -161,10 +163,11 @@
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.click-button:hover {
+.click-button:hover a:hover{
   background-color: white;
   color: orange;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
