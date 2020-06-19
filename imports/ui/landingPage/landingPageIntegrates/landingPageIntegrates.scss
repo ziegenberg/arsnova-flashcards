@@ -68,6 +68,7 @@
 }
 
 .frag-jetzt-button a{
+  border-radius: 20px;
   transition-duration: 0.4s;
   padding: 10px;
   display: inline-block;
@@ -75,7 +76,8 @@
   border: none;
   color: black;
   text-align: center;
-  width: 100%;
+  margin-left: 10%;
+  width: 80%;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -152,6 +154,7 @@
 }
 
 .click-button a{
+  border-radius: 20px;
   transition-duration: 0.4s;
   padding: 10px;
   display: inline-block;
@@ -159,7 +162,8 @@
   border: none;
   color: white;
   text-align: center;
-  width: 100%;
+  margin-left: 10%;
+  width: 80%;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
