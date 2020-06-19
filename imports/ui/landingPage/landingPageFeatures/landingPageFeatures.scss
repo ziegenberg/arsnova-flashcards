@@ -58,6 +58,11 @@
 
 }
 
+.cards-content {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
 .landing-page-feature-card {
   background-color: #fafad2!important;
   padding: 10px;
