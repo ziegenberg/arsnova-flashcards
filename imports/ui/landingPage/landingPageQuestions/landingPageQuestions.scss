@@ -48,12 +48,10 @@
   a {
     height: 100%;
     width: 50px;
-    color: white;
     text-align: center;
   }
   i {
     font-size: 50px;
-    color: white !important;
     text-align: center;
     border: 1px solid black;
     //margin-left: 50%;
@@ -62,8 +60,6 @@
   }
   i:hover {
     cursor: pointer;
-    background-color: #0b46da !important;
-    color: white !important;
   }
 }
 
