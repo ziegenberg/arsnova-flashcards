@@ -837,11 +837,24 @@ $themes: (
     $landing_page_nav_modal_close_hover: map-get($map, "landing_page_nav_modal_close_hover");
     $landing_page_intro_background_color: map-get($map, "landing_page_intro_background_color");
     $landing_page_intro_color: map-get($map, "landing_page_intro_color");
+    $landing_page_intro_button_background_color: map-get($map, "landing_page_intro_button_background_color");
+    $landing_page_intro_button_color: map_get($map, "landing_page_intro_button_color");
     $landing_page_feature_background: map-get($map, "landing_page_feature_background");
     $landing_page_feature_color: map-get($map, "landing_page_feature_color");
     $landing_page_feature_box_background: map-get($map, "landing_page_feature_box_background");
     $landing_page_integrates_background: map-get($map, "landing_page_integrates_background");
     $landing_page_integrates_color: map-get($map, "landing_page_integrates_color");
+    $landing_page_integrates_title_color: map_get($map, "landing_page_integrates_title_color");
+    $landing_page_integrates_fragjetzt_title: map_get($map, "landing_page_integrates_fragjetzt_title");
+    $landing_page_integrates_fragjetzt_button_background_color: map_get($map, "landing_page_integrates_fragjetzt_button_background_color");
+    $landing_page_integrates_fragjetzt_button_color: map_get($map, "landing_page_integrates_fragjetzt_button_color");
+    $landing_page_integrates_fragjetzt_button_background_color_hover: map_get($map, "landing_page_integrates_fragjetzt_button_background_color_hover");
+    $landing_page_integrates_fragjetzt_button_color_hover: map_get($map, "landing_page_integrates_fragjetzt_button_color_hover");
+    $landing_page_integrates_click_title: map_get($map, "landing_page_integrates_click_title");
+    $landing_page_integrates_click_button_background_color: map_get($map, "landing_page_integrates_click_button_background_color");
+    $landing_page_integrates_click_button_color: map_get($map, "landing_page_integrates_click_button_color");
+    $landing_page_integrates_click_button_background_color_hover: map_get($map, "landing_page_integrates_click_button_background_color_hover");
+    $landing_page_integrates_click_button_color_hover: map_get($map, "landing_page_integrates_click_button_color_hover");
     $landing_page_questions_background: map-get($map, "landing_page_questions_background");
     $landing_page_questions_color: map-get($map, "landing_page_questions_color");
     $landing_page_questions_box_background: map-get($map, "landing_page_questions_box_background");
@@ -852,6 +865,7 @@ $themes: (
     $landing_page_questions_background_color_hover: map-get($map, "landing_page_questions_background_color_hover");
     $landing_page_footer_background: map-get($map, "landing_page_footer_background");
     $landing_page_footer_color: map-get($map, "landing_page_footer_color");
+    $landing_page_footer_color_hover: map_get($map, "landing_page_footer_color_hover");
 
     .navbar-toggle {
       background-color: $navbar_collapse_background !important;
@@ -4196,9 +4210,18 @@ $themes: (
     }
 
     #landing-page-intro {
-      color: $landing_page_intro_color;
       background-color: $landing_page_intro_background_color;
+      #landing-page-intro-text-div {
+        a {
+          color: $landing_page_intro_color;
+        }
+      }
+      .button {
+        background-color: $landing_page_intro_button_background_color;
+        color: $landing_page_intro_button_color;
+      }
     }
+
     #landing-page-feature {
       background-color: $landing_page_feature_background;
       color: $landing_page_feature_color;
@@ -4212,11 +4235,39 @@ $themes: (
     #landing-page-integrates {
       background-color: $landing_page_integrates_background;
       color: $landing_page_integrates_color;
-      #landing-page-integrates-picture-fragjetzt {
+      .landing-page-integrates-title {
+        color: $landing_page_integrates_title_color;
       }
-      #landing-page-integrates-picture-arsnovaclick {
+      #landing-page-integrates-fragjetzt-text a {
+        color: $landing_page_integrates_color;
+        h1 {
+          color: $landing_page_integrates_fragjetzt_title;
+        }
+      }
+      .frag-jetzt-button a{
+        background-color: $landing_page_integrates_fragjetzt_button_background_color;
+        color: $landing_page_integrates_fragjetzt_button_color;
+      }
+      .frag-jetzt-button:hover a:hover {
+        background-color: $landing_page_integrates_fragjetzt_button_background_color_hover;
+        color: $landing_page_integrates_fragjetzt_button_color_hover;
+      }
+      #landing-page-integrates-arsnovaclick-text a{
+        color: $landing_page_integrates_color;
+        h1 {
+          color: $landing_page_integrates_click_title;
+        }
+      }
+      .click-button a{
+        background-color: $landing_page_integrates_click_button_background_color;
+        color: $landing_page_integrates_click_button_color;
+      }
+      .click-button:hover a:hover {
+        background-color: $landing_page_integrates_click_button_background_color_hover;
+        color: $landing_page_integrates_click_button_color_hover;
       }
     }
+
     #landing-page-questions {
       background-color: $landing_page_questions_background;
       color: $landing_page_questions_color;
@@ -4228,7 +4279,7 @@ $themes: (
       }
       .landing-page-questions-backToTop {
         i {
-          color: $landing_page_questions_background_color;
+          color: $landing_page_questions_button_color;
           background-color: $landing_page_questions_background_color;
         }
         i:hover {
@@ -4237,9 +4288,15 @@ $themes: (
         }
       }
     }
+
     #landing-page-footer {
       background-color: $landing_page_footer_background;
-      color: $landing_page_footer_color;
+      a {
+        color: $landing_page_footer_color
+      }
+      a:hover {
+        color: $landing_page_footer_color_hover;
+      }
     }
   }
 }

@@ -35,7 +35,6 @@
   background-size: contain;
   background-position: center;
   a  {
-    color: white;
     height: auto;
     font-weight: 200;
     letter-spacing: 1px;
@@ -56,9 +55,7 @@
 .button {
   transition-duration: 0.4s;
   display: inline-block;
-  background-color: red;
   border: none;
-  color: white;
   text-align: center;
   width: 100%;
   cursor: pointer;
