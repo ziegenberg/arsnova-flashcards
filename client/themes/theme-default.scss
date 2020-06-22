@@ -40,6 +40,8 @@
   $input_textarea_text_inactive: black;
   $item_icon_hover: midnightblue;
   $default_background: black;
+  $light_green_gradient: linear-gradient(0deg,rgba(92,184,92,.3) 0,rgba(92,184,92,.3) 4px,#f0fff0 5px,#f0fff0);
+  $light_yellow_background: #fafad2;
 
   @return (
     //background (Deactivate the image with "none" if you want to use the background-color)
@@ -863,10 +865,17 @@
           "use_cases_special_cardsets_button_background_hover": $thm_green,
           "use_cases_special_cardsets_button_text_hover": white,
     //landingPage
-          "landing_page_nav_color": white,
+          "landing_page_nav_title_color": $thm_green,
           "landing_page_nav_background": $primary_text,
           "landing_page_nav_hover": $thm_gray,
           "landing_page_nav_text_color": white,
+          "landing_page_nav_modal_color": black,
+          "landing_page_nav_modal_content_background_color": white,
+          "landing_page_nav_modal_content_color": black,
+          "landing_page_nav_modal_hover_background_color": gray,
+          "landing_page_nav_modal_hover_color": black,
+          "landing_page_nav_modal_close_color": red,
+          "landing_page_nav_modal_close_hover": black,
           "landing_page_intro_background_color": $thm_gray,
           "landing_page_intro_color": black,
           "landing_page_feature_background": white,
@@ -876,6 +885,12 @@
           "landing_page_integrates_color": white,
           "landing_page_questions_background": white,
           "landing_page_questions_color": black,
+          "landing_page_questions_box_background": $light_green_gradient,
+          "landing_page_questions_box_body_background": $light_yellow_background,
+          "landing_page_questions_button_color": $white,
+          "landing_page_questions_background_color": $primary_text,
+          "landing_page_questions_button_color_hover": $primary_text,
+          "landing_page_questions_background_color_hover": $white,
           "landing_page_footer_background": $primary_text,
           "landing_page_footer_color": white,
   );

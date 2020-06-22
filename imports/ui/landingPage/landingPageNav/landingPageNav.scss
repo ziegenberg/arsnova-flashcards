@@ -24,7 +24,6 @@
 }
 
 .li-left {
-  color: green !important;
   font-size: 30px;
   float: left;
   pointer-events: none;
@@ -38,7 +37,6 @@
 .landing-page-nav-text:hover {
   text-decoration: none;
   cursor: pointer;
-  background-color: gray;
 }
 
 @media screen and (max-width: 768px) {

@@ -823,10 +823,18 @@ $themes: (
     $use_cases_special_cardsets_button_background_hover: map-get($map, "use_cases_special_cardsets_button_background_hover");
     $use_cases_special_cardsets_button_text_hover: map-get($map, "use_cases_special_cardsets_button_text_hover");
     //landingPage
-    $landing_page_nav_color: map-get($map, "landing_page_nav_color");
+    $landing_page_nav_title_color: map-get($map, "landing_page_nav_title_color");
     $landing_page_nav_background: map-get($map, "landing_page_nav_background");
     $landing_page_nav_text_color: map-get($map, "landing_page_nav_text_color");
     $landing_page_nav_hover: map-get($map, "landing_page_nav_hover");
+    $landing_page_nav_modal_background_color: map-get($map, "landing_page_nav_modal_background_color");
+    $landing_page_nav_modal_color: map-get($map, "landing_page_nav_modal_color");
+    $landing_page_nav_modal_content_background_color: map-get($map, "landing_page_nav_modal_content_background_color");
+    $landing_page_nav_modal_content_color: map-get($map, "landing_page_nav_modal_content_color");
+    $landing_page_nav_modal_hover_background_color: map-get($map, "landing_page_nav_modal_hover_background_color");
+    $landing_page_nav_modal_hover_color: map-get($map, "landing_page_nav_modal_hover_color");
+    $landing_page_nav_modal_close_color: map-get($map, "landing_page_nav_modal_close_color");
+    $landing_page_nav_modal_close_hover: map-get($map, "landing_page_nav_modal_close_hover");
     $landing_page_intro_background_color: map-get($map, "landing_page_intro_background_color");
     $landing_page_intro_color: map-get($map, "landing_page_intro_color");
     $landing_page_feature_background: map-get($map, "landing_page_feature_background");
@@ -836,6 +844,12 @@ $themes: (
     $landing_page_integrates_color: map-get($map, "landing_page_integrates_color");
     $landing_page_questions_background: map-get($map, "landing_page_questions_background");
     $landing_page_questions_color: map-get($map, "landing_page_questions_color");
+    $landing_page_questions_box_background: map-get($map, "landing_page_questions_box_background");
+    $landing_page_questions_box_body_background: map-get($map, "landing_page_questions_box_body_background");
+    $landing_page_questions_button_color: map-get($map, "landing_page_questions_button_color");
+    $landing_page_questions_background_color: map-get($map, "landing_page_questions_background_color");
+    $landing_page_questions_button_color_hover: map-get($map, "landing_page_questions_button_color_hover");
+    $landing_page_questions_background_color_hover: map-get($map, "landing_page_questions_background_color_hover");
     $landing_page_footer_background: map-get($map, "landing_page_footer_background");
     $landing_page_footer_color: map-get($map, "landing_page_footer_color");
 
@@ -4144,15 +4158,43 @@ $themes: (
 
     //landing page
     #landing-page-nav {
-      color: $landing_page_nav_color;
-      background-color: $landing_page_nav_background;
+      background-color: $landing_page_nav_background !important;
+      .landing-page-nav-text {
+        color: $landing_page_nav_text_color !important;
+      }
       .icon {
-        color: white;
+        color: $landing_page_nav_text_color !important;
+      }
+      .li-left {
+        color: $landing_page_nav_title_color !important;
+      }
+      .li-right:hover {
+        background-color: $landing_page_nav_hover !important;
       }
     }
-    .landing-page-nav-text {
-      color: $landing_page_nav_text_color;
+
+    #NavPopupModal {
+      .navModalText {
+        color: $landing_page_nav_modal_color !important;
+      }
+      .navModalContent ul {
+        background-color: $landing_page_nav_modal_content_background_color !important;
+      }
+      .navModalContent li {
+        color: $landing_page_nav_modal_content_color !important;
+      }
+      .navModalContent .navModalText:hover {
+        background-color: $landing_page_nav_modal_hover_background_color !important;
+        color: $landing_page_nav_modal_hover_color !important;
+      }
+      .close {
+        color: $landing_page_nav_modal_close_color !important;
+      }
+      .close:hover, .close:focus {
+        color: $landing_page_nav_modal_close_hover !important;
+      }
     }
+
     #landing-page-intro {
       color: $landing_page_intro_color;
       background-color: $landing_page_intro_background_color;
@@ -4166,6 +4208,7 @@ $themes: (
       #landing-page-feature-picture{
       }
     }
+
     #landing-page-integrates {
       background-color: $landing_page_integrates_background;
       color: $landing_page_integrates_color;
@@ -4177,6 +4220,22 @@ $themes: (
     #landing-page-questions {
       background-color: $landing_page_questions_background;
       color: $landing_page_questions_color;
+      .question-panel > .panel-heading, .question-panel.panel-default > .panel-heading {
+        background: $landing_page_questions_box_background;
+      }
+      .question-panel-default > .panel-heading + .panel-collapse > .panel-body {
+        background-color: $landing_page_questions_box_body_background;
+      }
+      .landing-page-questions-backToTop {
+        i {
+          color: $landing_page_questions_background_color;
+          background-color: $landing_page_questions_background_color;
+        }
+        i:hover {
+          color: $landing_page_questions_button_color_hover;
+          background-color: $landing_page_questions_background_color_hover;
+        }
+      }
     }
     #landing-page-footer {
       background-color: $landing_page_footer_background;

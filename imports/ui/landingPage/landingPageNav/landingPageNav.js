@@ -1,9 +1,11 @@
 import './landingPageNav.html';
 
-export let animationTime = 600; //scroll animation time
+//scroll animation time
+export let animationTime = 600;
 
+//toggles scroll snapping off for a smoother scroll animation
 export function toggleClass(withTimeout) {
-	let containers = document.getElementsByClassName("template-containers");
+	let containers = document.getElementsByClassName("landing-page-template-containers");
 	if (withTimeout) {
 		setTimeout(function () {
 			toggleClass();
@@ -15,12 +17,14 @@ export function toggleClass(withTimeout) {
 	}
 }
 
+//does a scroll animation to the given id/class name in html
 export function animateScroll(id){
 	$('html, body').animate({
 		scrollTop: $(id).offset().top - 51
 	}, animationTime);
 }
 
+//scrolls to the given id/class name in html
 function scrollTo(event, id) {
 	event.preventDefault();
 	toggleClass(false);
