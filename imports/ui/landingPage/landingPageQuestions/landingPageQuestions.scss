@@ -16,6 +16,7 @@
 
 .question-panel > .panel-heading, .question-panel.panel-default > .panel-heading {
   margin-top: 1%;
+  cursor: pointer;
 }
 
 .question-panel-default > .panel-heading + .panel-collapse > .panel-body {
@@ -35,28 +36,34 @@
 }
 
 .question-container {
-  height: 85%;
+  height: 70%;
   overflow-y: auto;
 }
 
 .landing-page-questions-backToTop {
-  margin-top: 10px;
   height: 5%;
   width: 100%;
+  text-align: center;
+  margin-top: 1%;
   a {
     height: 100%;
     width: 50px;
+    color: white;
+    text-align: center;
   }
   i {
     font-size: 50px;
+    color: white !important;
     text-align: center;
     border: 1px solid black;
-    margin-left: 50%;
+    //margin-left: 50%;
     border-radius: 50%;
     padding: 2px 10px;
   }
   i:hover {
     cursor: pointer;
+    background-color: #0b46da !important;
+    color: white !important;
   }
 }
 
