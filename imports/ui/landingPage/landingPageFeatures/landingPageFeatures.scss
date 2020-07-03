@@ -130,12 +130,19 @@ hr.solid {
   .landing-page-feature-card {
     width: 100%;
     height: 20%;
+    overflow: hidden;
+    .landing-page-feature-icons {
+      margin-bottom: 20px;
+    }
     h3 {
       display: none;
     }
     h2 {
       margin-top: 0;
-      margin-bottom: 0;
+      margin-bottom: 30px;
+    }
+    p {
+      display: none;
     }
   }
 }

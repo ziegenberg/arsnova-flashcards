@@ -6,6 +6,8 @@ import './landingPageFeatures/landingPageFeatures.js';
 import './landingPageIntegrates/landingPageIntegrates.js';
 import './landingPageQuestions/landingPageQuestions.js';
 import './landingPageFooter/landingPageFooter.js';
+import './landingPageFeatures/landingPageFeatureModal/landingPageFeatureModal.js';
+import './landingPageFeatures/landingPageFeaturesCards/bonus/landingPageFeatureCardsBonus.js';
 import {setLanguage, setTheme} from "../../startup/client/routes";
 
 Template.landingPage.onCreated(function () {
