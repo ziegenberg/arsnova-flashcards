@@ -44,7 +44,8 @@
   $light_yellow_background: #fafad2;
   $frag_jetzt_violett: #bb86fc;
   $frag_jetzt_teal: #03dac6;
-  $arsnova_click_orange: #fd7e14;
+  $arsnova_click_orange: #fb9a1c;
+  $arsnova_click_text: #1e1e1e;
 
   @return (
     //background (Deactivate the image with "none" if you want to use the background-color)
@@ -881,7 +882,7 @@
           "landing_page_nav_modal_close_hover": black,
           "landing_page_intro_background_color": $thm_gray,
           "landing_page_intro_color": white,
-          "landing_page_intro_button_background_color": $thm_red,
+          "landing_page_intro_button_background_color": $thm_green,
           "landing_page_intro_button_color": white,
           "landing_page_feature_background": white,
           "landing_page_feature_color": white,
@@ -896,7 +897,7 @@
           "landing_page_integrates_fragjetzt_button_color_hover": black,
           "landing_page_integrates_click_title": $arsnova_click_orange,
           "landing_page_integrates_click_button_background_color": $arsnova_click_orange,
-          "landing_page_integrates_click_button_color": white,
+          "landing_page_integrates_click_button_color": #1e1e1e,
           "landing_page_integrates_click_button_background_color_hover": white,
           "landing_page_integrates_click_button_color_hover": $arsnova_click_orange,
           "landing_page_questions_background": white,
