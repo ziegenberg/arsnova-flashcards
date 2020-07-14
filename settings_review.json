@@ -1,6 +1,6 @@
 {
   "public": {
-    "rooturl": "http://localhost:<branch-port>",
+    "rooturl": "https://localhost:<branch-port>",
     "dynamicSettings": "review",
     "backdoorEnabled": true,
     "cas": {
