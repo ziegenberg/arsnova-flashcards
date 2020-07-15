@@ -10,7 +10,28 @@ const PRO = 2;
 const LECTURER = 3;
 const GUEST = 4;
 
+const AUTO = 0;
+const MANUAL = 1;
+const CHOOSE = 2;
+
 let defaultSettings = {
+	"fullscreen": {
+		"settings": {
+			"enabled": [FREE, EDU, LECTURER, PRO],
+			"presentation": [FREE, EDU, LECTURER, PRO],
+			"demo": [FREE, EDU, LECTURER, PRO],
+			"leitner": [FREE, EDU, LECTURER, PRO],
+			"wozniak": [FREE, EDU, LECTURER, PRO]
+		},
+		"defaults": { // Will be used if the user got not access to the fullscreen settings
+			"free": AUTO,
+			"edu": AUTO,
+			"lecturer": CHOOSE,
+			"pro": MANUAL,
+			"guest": AUTO,
+			"landingPage": AUTO
+		}
+	},
 	"navigationFeatures": { //Excludes Super Admins (Backend) and Editors (Frontend)
 		"simplifiedNav": true, // Removes dropdowns and groups content together
 		"useCases": { //Will be only visible if the related navigation item is enabled
@@ -160,6 +181,21 @@ let defaultSettings = {
 };
 
 let debug = {
+	"fullscreen": {
+		"settings": {
+			"enabled": [FREE, EDU, LECTURER, PRO],
+			"presentation": [FREE, EDU, LECTURER, PRO],
+			"demo": [FREE, EDU, LECTURER, PRO],
+			"leitner": [FREE, EDU, LECTURER, PRO],
+			"wozniak": [FREE, EDU, LECTURER, PRO]
+		},
+		"defaults": { // Will be used if the user got not access to the fullscreen settings
+			"free": AUTO,
+			"edu": AUTO,
+			"lecturer": CHOOSE,
+			"pro": MANUAL
+		}
+	},
 	"navigationFeatures": { //Excludes Super Admins (Backend) and Editors (Frontend)
 		"simplifiedNav": true, // Removes dropdowns and groups content together
 		"useCases": { //Will be only visible if the related navigation item is enabled
@@ -309,6 +345,23 @@ let debug = {
 };
 
 let linux = {
+	"fullscreen": {
+		"settings": {
+			"enabled": [FREE, EDU, LECTURER, PRO],
+			"presentation": [FREE, EDU, LECTURER, PRO],
+			"demo": [FREE, EDU, LECTURER, PRO],
+			"leitner": [FREE, EDU, LECTURER, PRO],
+			"wozniak": [FREE, EDU, LECTURER, PRO]
+		},
+		"defaults": { // Will be used if the user got not access to the fullscreen settings
+			"free": AUTO,
+			"edu": AUTO,
+			"lecturer": CHOOSE,
+			"pro": MANUAL,
+			"guest": AUTO,
+			"landingPage": AUTO
+		}
+	},
 	"navigationFeatures": { //Excludes Super Admins (Backend) and Editors (Frontend)
 		"simplifiedNav": true, // Removes dropdowns and groups content together
 		"useCases": { //Will be only visible if the related navigation item is enabled
@@ -458,6 +511,23 @@ let linux = {
 };
 
 let review = {
+	"fullscreen": {
+		"settings": {
+			"enabled": [FREE, EDU, LECTURER, PRO],
+			"presentation": [FREE, EDU, LECTURER, PRO],
+			"demo": [FREE, EDU, LECTURER, PRO],
+			"leitner": [FREE, EDU, LECTURER, PRO],
+			"wozniak": [FREE, EDU, LECTURER, PRO]
+		},
+		"defaults": { // Will be used if the user got not access to the fullscreen settings
+			"free": AUTO,
+			"edu": AUTO,
+			"lecturer": CHOOSE,
+			"pro": MANUAL,
+			"guest": AUTO,
+			"landingPage": AUTO
+		}
+	},
 	"navigationFeatures": { //Excludes Super Admins (Backend) and Editors (Frontend)
 		"simplifiedNav": true, // Removes dropdowns and groups content together
 		"useCases": { //Will be only visible if the related navigation item is enabled
@@ -607,6 +677,23 @@ let review = {
 };
 
 let staging = {
+	"fullscreen": {
+		"settings": {
+			"enabled": [FREE, EDU, LECTURER, PRO],
+			"presentation": [FREE, EDU, LECTURER, PRO],
+			"demo": [FREE, EDU, LECTURER, PRO],
+			"leitner": [FREE, EDU, LECTURER, PRO],
+			"wozniak": [FREE, EDU, LECTURER, PRO]
+		},
+		"defaults": { // Will be used if the user got not access to the fullscreen settings
+			"free": AUTO,
+			"edu": AUTO,
+			"lecturer": CHOOSE,
+			"pro": MANUAL,
+			"guest": AUTO,
+			"landingPage": AUTO
+		}
+	},
 	"navigationFeatures": { //Excludes Super Admins (Backend) and Editors (Frontend)
 		"simplifiedNav": true, // Removes dropdowns and groups content together
 		"useCases": { //Will be only visible if the related navigation item is enabled
